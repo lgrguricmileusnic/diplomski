@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -149,10 +150,22 @@
   },
   "active": "0a15c61536956b24",
   "lastOpenFiles": [
+    "biljeske/pdf/lovro_grguricmileusnic_08_12_2023.pdf",
+    "kod/CAN-Examples/cantransmit",
+    "kod/CAN-Examples/canreceive",
+    "kod/CAN-Examples/cantransmit.c",
+    "kod/CAN-Examples/canreceive.c",
+    "kod/CAN-Examples/canfilter.c",
+    "kod/CAN-Examples/README.md",
+    "kod/CAN-Examples/LICENSE",
+    "kod/CAN-Examples",
+    "kod/slusaj.c",
+    "kod",
+    "biljeske/27_10_2023.md",
+    "biljeske/08_12_2023.md",
     "Pasted image 20231209170559.png",
     "Pasted image 20231209170401.png",
     "slike/klasifikacija_AA_u_AAD.png",
-    "biljeske/08_12_2023.md",
     "].md",
     "biljeske/17_11_2023.md"
   ]
