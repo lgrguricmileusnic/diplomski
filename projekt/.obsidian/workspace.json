@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/08_12_2023.md",
+                "file": "biljeske/12_01_2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/08_12_2023.md",
+                "file": "biljeske/12_01_2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/08_12_2023.md",
+                "file": "biljeske/12_01_2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/08_12_2023.md"
+                "file": "biljeske/12_01_2023.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "4e7721feb28d0a5a",
   "lastOpenFiles": [
+    "biljeske/08_12_2023.md",
     "biljeske/12_01_2023.md",
     "slike/agl_flutter_dashboard_ivi.png",
     "slike/ic-flutter.png",
@@ -170,7 +171,6 @@
     "kod/agl-cluster-demo-dashboard/app/images/AGL_Icons_Seatbelt_red.svg",
     "kod/agl-cluster-demo-dashboard/app/images/AGL_Icons_Seatbelt.svg",
     "biljeske/27_10_2023.md",
-    "biljeske/08_12_2023.md",
     "kod/CAN-Examples/README.md",
     "].md",
     "biljeske/17_11_2023.md"
