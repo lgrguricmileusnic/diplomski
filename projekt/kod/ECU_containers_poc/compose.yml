@@ -1,0 +1,43 @@
+services:
+    ecu1:
+        #image: alpine
+        build: ./ecu1
+        tty: true
+        stdin_open: true
+        cap_add:
+            - NET_ADMIN
+    ecu2:
+        #image: alpine
+        build: ./ecu2
+        tty: true
+        stdin_open: true
+        cap_add:
+            - NET_ADMIN
+    ecu3:
+        #image: alpine
+        build: ./ecu3
+        tty: true
+        stdin_open: true
+        cap_add:
+            - NET_ADMIN
+    ecu4:
+        #image: alpine
+        build: ./ecu4
+        tty: true
+        stdin_open: true
+        cap_add:
+            - NET_ADMIN
+    ecu5:
+        #image: alpine
+        build: ./ecu5
+        tty: true
+        stdin_open: true
+        cap_add:
+            - NET_ADMIN
+    gw:
+        #image: alpine
+        build: ./gw
+        tty: true
+        stdin_open: true
+        cap_add:
+            - NET_ADMIN

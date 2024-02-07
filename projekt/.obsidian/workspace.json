@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/08_12_2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/08_12_2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/08_12_2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/19_01_2024.md"
+                "file": "biljeske/08_12_2023.md"
               }
             }
           }
@@ -148,37 +148,36 @@
   },
   "active": "0c1c63e66128605b",
   "lastOpenFiles": [
-    "slike/koncept2.png",
-    "slike/koncept2.jpg",
-    "slike/koncept2.drawio",
+    "biljeske/17_11_2023.md",
     "biljeske/12_01_2024.md",
     "biljeske/19_01_2024.md",
+    "kod/ECU_containers_poc/gw/setup_gw.sh",
+    "kod/ECU_containers_poc/gw/Dockerfile",
+    "kod/ECU_containers_poc/gw",
+    "kod/ECU_containers_poc/ecu5/Dockerfile",
+    "kod/ECU_containers_poc/ecu5",
+    "kod/ECU_containers_poc/ecu4/Dockerfile",
+    "kod/ECU_containers_poc/ecu4",
+    "kod/ECU_containers_poc/ecu3/Dockerfile",
+    "kod/ECU_containers_poc/ecu3",
+    "kod/ECU_containers_poc/ecu2/Dockerfile",
+    "slike/koncept2.png",
+    "slike/koncept2.jpg",
     "biljeske/27_10_2023.md",
     "slike/koncept1_zoom_out.jpg",
-    "slike/koncept1_zoom_out.drawio",
     "slike/koncept1.jpg",
-    "slike/koncept1.drawio",
     "biljeske/08_12_2023.md",
     "biljeske/20_10_2023.md",
     "biljeske/10_11_2023.md",
     "biljeske/03_11_2023.md",
     "Untitled.canvas",
     "slike/izvedba2a.jpg",
-    "slike/izvedba2a.drawio",
     "slike/izvedba1.jpg",
-    "slike/izvedba1.drawio",
     "slike/agl_flutter_dashboard_ivi.png",
     "slike/ic-flutter.png",
     "slike/pilotdrive.png",
-    "kod/AGL-repo/quillback_16.92.0.xml",
-    "kod/AGL-repo/quillback_16.91.0.xml",
-    "kod/AGL-repo/pike_15.92.0.xml",
-    "kod/AGL-repo/pike_15.91.1.xml",
-    "kod/AGL-repo/pike_15.91.0.xml",
     "kod/agl-cluster-demo-dashboard/app/images/temperature-icon.png",
-    "kod/agl-cluster-demo-dashboard/app/images/fuel-icon.png",
     "kod/CAN-Examples/README.md",
-    "].md",
-    "biljeske/17_11_2023.md"
+    "].md"
   ]
 }
