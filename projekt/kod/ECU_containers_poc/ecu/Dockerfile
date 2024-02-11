@@ -1,0 +1,6 @@
+FROM alpine
+RUN apk add bash && apk add can-utils
+
+COPY ./setup_ecu.sh /
+RUN chmod +x /setup_ecu.sh
+ENTRYPOINT ["/setup_ecu.sh"]

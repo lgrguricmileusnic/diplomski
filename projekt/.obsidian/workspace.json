@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "538f96e3968178a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "biljeske/19_01_2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/08_12_2023.md",
+                "file": "biljeske/19_01_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/08_12_2023.md",
+                "file": "biljeske/19_01_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/08_12_2023.md"
+                "file": "biljeske/19_01_2024.md"
               }
             }
           }
@@ -146,27 +159,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0c1c63e66128605b",
+  "active": "538f96e3968178a4",
   "lastOpenFiles": [
+    "kod/ECU_containers_poc/ecu/setup_ecu.sh",
+    "kod/ECU_containers_poc/ecu/ecu.sh",
+    "kod/ECU_containers_poc/ecu/Dockerfile",
+    "kod/ECU_containers_poc/ecu",
+    "kod/ECU_containers_poc/compose.yml",
+    "kod/ECU_containers_poc/old-compose.yml",
+    "kod/ECU_containers_poc/ecu5/ecu.sh",
+    "kod/ECU_containers_poc/ecu4/ecu.sh",
+    "kod/ECU_containers_poc/ecu3/ecu.sh",
+    "kod/ECU_containers_poc/ecu2/ecu.sh",
+    "kod/ECU_containers_poc/ecu1/ecu.sh",
+    "biljeske/08_12_2023.md",
+    "biljeske/19_01_2024.md",
     "biljeske/17_11_2023.md",
     "biljeske/12_01_2024.md",
-    "biljeske/19_01_2024.md",
-    "kod/ECU_containers_poc/gw/setup_gw.sh",
-    "kod/ECU_containers_poc/gw/Dockerfile",
-    "kod/ECU_containers_poc/gw",
-    "kod/ECU_containers_poc/ecu5/Dockerfile",
-    "kod/ECU_containers_poc/ecu5",
-    "kod/ECU_containers_poc/ecu4/Dockerfile",
-    "kod/ECU_containers_poc/ecu4",
-    "kod/ECU_containers_poc/ecu3/Dockerfile",
-    "kod/ECU_containers_poc/ecu3",
-    "kod/ECU_containers_poc/ecu2/Dockerfile",
     "slike/koncept2.png",
     "slike/koncept2.jpg",
     "biljeske/27_10_2023.md",
     "slike/koncept1_zoom_out.jpg",
     "slike/koncept1.jpg",
-    "biljeske/08_12_2023.md",
     "biljeske/20_10_2023.md",
     "biljeske/10_11_2023.md",
     "biljeske/03_11_2023.md",
