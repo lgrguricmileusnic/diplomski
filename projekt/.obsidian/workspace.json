@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/08_12_2023.md",
+                "file": "biljeske/19_01_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,16 +23,13 @@
             "id": "538f96e3968178a4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "biljeske/19_01_2024.md",
-                "mode": "source",
-                "source": false
+                "file": "slike/can4docker_arch.png"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,21 +156,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "538f96e3968178a4",
+  "active": "0c1c63e66128605b",
   "lastOpenFiles": [
-    "kod/ECU_containers_poc/setup_vxcan.sh",
+    "kod/ECU_containers_poc/ecu/setup_cangw.sh",
+    "kod/ECU_containers_poc/gw/setup_cangw.sh",
     "biljeske/08_12_2023.md",
+    "slike/can4docker_arch.png",
+    "slike/screenshot_terminal_can4docker.png",
     "biljeske/19_01_2024.md",
+    "kod/vxcandocker_test/compose.yml",
+    "kod/vxcandocker_test",
+    "kod/can4docker_test/compose.yml~",
+    "kod/can4docker_test/compose.yml",
+    "kod/can4docker_test",
+    "kod/ECU_containers_poc/Makefile~",
+    "kod/ECU_containers_poc/Makefile",
+    "kod/ECU_containers_poc/setup_vxcan.sh",
     "kod/ECU_containers_poc/ecu/setup_ecu.sh",
-    "kod/ECU_containers_poc/ecu/ecu.sh",
-    "kod/ECU_containers_poc/ecu/Dockerfile",
-    "kod/ECU_containers_poc/ecu",
-    "kod/ECU_containers_poc/compose.yml",
-    "kod/ECU_containers_poc/old-compose.yml",
-    "kod/ECU_containers_poc/ecu5/ecu.sh",
-    "kod/ECU_containers_poc/ecu4/ecu.sh",
-    "kod/ECU_containers_poc/ecu3/ecu.sh",
-    "kod/ECU_containers_poc/ecu2/ecu.sh",
     "biljeske/17_11_2023.md",
     "biljeske/12_01_2024.md",
     "slike/koncept2.png",
@@ -189,8 +188,6 @@
     "slike/izvedba1.jpg",
     "slike/agl_flutter_dashboard_ivi.png",
     "slike/ic-flutter.png",
-    "slike/pilotdrive.png",
-    "kod/agl-cluster-demo-dashboard/app/images/temperature-icon.png",
     "kod/CAN-Examples/README.md",
     "].md"
   ]

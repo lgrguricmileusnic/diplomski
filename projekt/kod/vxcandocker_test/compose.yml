@@ -1,0 +1,29 @@
+version: "3"
+services:
+  app_hub:
+    image: alpine
+    tty: true
+    networks: 
+      - canbus3
+      - canbus4
+  app_can0:
+    image: alpine 
+    tty: true
+    networks: [ canbus3 ]
+  app_can1:
+    image: alpine 
+    tty: true
+    networks: [ canbus4 ]
+networks:
+  canbus3:
+    driver: wsovalle/vxcan:latest
+    driver_opts:
+      vxcan.dev: can_host
+      vxcan.peer: can_docker
+      vxcan.id: 0
+  canbus4:
+    driver: wsovalle/vxcan:latest
+    driver_opts:
+      vxcan.dev: can_host
+      vxcan.peer: can_docker
+      vxcan.id: 1  
