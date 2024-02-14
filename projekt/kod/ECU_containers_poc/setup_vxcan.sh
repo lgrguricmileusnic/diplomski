@@ -26,13 +26,15 @@ echo "ECU ids: ${ecu_ids[@]}"
 i=1
 for ecu_id in ${ecu_ids[@]}
 do
-    echo "Setting up vxcan pair gw_vxcan$i ecu_vxcan$i for ecu with ID $ecu_id" 
+    echo "Setting up vxcan pair gw_vxcan$i ecu_vxcan for ecu with ID $ecu_id" 
     sudo -- sh -c "
-        ip link add gw_vxcan$i type vxcan peer name ecu_vxcan$i
-        ip link set ecu_vxcan$i netns $ecu_id
+        ip link add gw_vxcan$i type vxcan peer name ecu_vxcan
+        ip link set ecu_vxcan netns $ecu_id
         ip link set gw_vxcan$i netns $gw_id
-        sudo nsenter -t $ecu_id -n ip link set ecu_vxcan$i up
+        sudo nsenter -t $ecu_id -n ip link set ecu_vxcan up
         sudo nsenter -t $gw_id -n ip link set gw_vxcan$i up
     "
-    i=$((i+2))
+
+    
+    i=$((i+1))
 done
