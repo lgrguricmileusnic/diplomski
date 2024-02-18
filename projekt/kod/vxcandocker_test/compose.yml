@@ -4,24 +4,24 @@ services:
     image: alpine
     tty: true
     networks: 
-      - canbus3
-      - canbus4
+      - canbus0
+      - canbus1
   app_can0:
     image: alpine 
     tty: true
-    networks: [ canbus3 ]
+    networks: [ canbus0 ]
   app_can1:
     image: alpine 
     tty: true
-    networks: [ canbus4 ]
+    networks: [ canbus1 ]
 networks:
-  canbus3:
+  canbus0:
     driver: wsovalle/vxcan:latest
     driver_opts:
       vxcan.dev: can_host
       vxcan.peer: can_docker
       vxcan.id: 0
-  canbus4:
+  canbus1:
     driver: wsovalle/vxcan:latest
     driver_opts:
       vxcan.dev: can_host

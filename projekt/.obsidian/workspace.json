@@ -13,19 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/18_02_2024.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "538f96e3968178a4",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "slike/can4docker_arch.png"
               }
             }
           }
@@ -95,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/18_02_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/18_02_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/19_01_2024.md"
+                "file": "biljeske/18_02_2024.md"
               }
             }
           }
@@ -158,21 +148,22 @@
   },
   "active": "0c1c63e66128605b",
   "lastOpenFiles": [
+    "biljeske/19_01_2024.md",
+    "slike/maxhops3.png",
+    "biljeske/18_02_2024.md",
+    "slike/can4docker_arch.png",
+    "kod/vxcandocker_test/clean.sh",
+    "biljeske/pdf/lovro_grguricmileusnic_19_01_2024.pdf",
+    "biljeske/pdf/lovro_grguricmileusnic_19_01_2023.pdf",
+    "biljeske/pdf/lovro_grguricmileusnic_09_01_2023.pdf",
     "kod/ECU_containers_poc/ecu/setup_cangw.sh",
     "kod/ECU_containers_poc/gw/setup_cangw.sh",
     "biljeske/08_12_2023.md",
-    "slike/can4docker_arch.png",
     "slike/screenshot_terminal_can4docker.png",
-    "biljeske/19_01_2024.md",
     "kod/vxcandocker_test/compose.yml",
     "kod/vxcandocker_test",
     "kod/can4docker_test/compose.yml~",
     "kod/can4docker_test/compose.yml",
-    "kod/can4docker_test",
-    "kod/ECU_containers_poc/Makefile~",
-    "kod/ECU_containers_poc/Makefile",
-    "kod/ECU_containers_poc/setup_vxcan.sh",
-    "kod/ECU_containers_poc/ecu/setup_ecu.sh",
     "biljeske/17_11_2023.md",
     "biljeske/12_01_2024.md",
     "slike/koncept2.png",
@@ -187,7 +178,6 @@
     "slike/izvedba2a.jpg",
     "slike/izvedba1.jpg",
     "slike/agl_flutter_dashboard_ivi.png",
-    "slike/ic-flutter.png",
     "kod/CAN-Examples/README.md",
     "].md"
   ]
