@@ -18,6 +18,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4347be50e11473d5",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "slike/maxhops3.png"
+              }
+            }
           }
         ]
       }
@@ -148,9 +158,9 @@
   },
   "active": "0c1c63e66128605b",
   "lastOpenFiles": [
-    "biljeske/19_01_2024.md",
     "slike/maxhops3.png",
     "biljeske/18_02_2024.md",
+    "biljeske/19_01_2024.md",
     "slike/can4docker_arch.png",
     "kod/vxcandocker_test/clean.sh",
     "biljeske/pdf/lovro_grguricmileusnic_19_01_2024.pdf",
