@@ -13,9 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/18_02_2024.md",
+                "file": "biljeske/19_01_2024.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "53caf95b8f7dc189",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "slike/screenshot_terminal_can4docker.png"
               }
             }
           },
@@ -29,7 +39,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/18_02_2024.md",
+                "file": "slike/screenshot_terminal_can4docker.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/18_02_2024.md",
+                "file": "slike/screenshot_terminal_can4docker.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/18_02_2024.md"
+                "file": "slike/screenshot_terminal_can4docker.png"
               }
             }
           }
@@ -156,11 +167,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0c1c63e66128605b",
+  "active": "53caf95b8f7dc189",
   "lastOpenFiles": [
-    "slike/maxhops3.png",
-    "biljeske/18_02_2024.md",
     "biljeske/19_01_2024.md",
+    "biljeske/18_02_2024.md",
+    "slike/maxhops3.png",
     "slike/can4docker_arch.png",
     "kod/vxcandocker_test/clean.sh",
     "biljeske/pdf/lovro_grguricmileusnic_19_01_2024.pdf",
