@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/08_03_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "slike/screenshot_terminal_can4docker.png"
+                "file": "slike/cannelloni_1on1_communication.png"
               }
             }
           },
@@ -39,8 +39,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "slike/screenshot_terminal_can4docker.png",
+                "file": "biljeske/08_03_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "slike/screenshot_terminal_can4docker.png",
+                "file": "biljeske/08_03_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "slike/screenshot_terminal_can4docker.png"
+                "file": "biljeske/08_03_2024.md"
               }
             }
           }
@@ -167,38 +166,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "53caf95b8f7dc189",
+  "active": "0c1c63e66128605b",
   "lastOpenFiles": [
+    "kod/candevstudio/test_projekt/test_projekt.cds",
+    "kod/candevstudio/test_projekt/simple_timer.qml.1",
+    "kod/candevstudio/test_projekt/simple_timer.qml",
+    "kod/candevstudio/test_projekt/simple_forwarder.qml",
+    "kod/candevstudio/test_projekt/sample.qml",
+    "kod/candevstudio/test_projekt",
+    "kod/candevstudio",
     "biljeske/19_01_2024.md",
-    "biljeske/18_02_2024.md",
-    "slike/maxhops3.png",
-    "slike/can4docker_arch.png",
-    "kod/vxcandocker_test/clean.sh",
-    "biljeske/pdf/lovro_grguricmileusnic_19_01_2024.pdf",
-    "biljeske/pdf/lovro_grguricmileusnic_19_01_2023.pdf",
-    "biljeske/pdf/lovro_grguricmileusnic_09_01_2023.pdf",
-    "kod/ECU_containers_poc/ecu/setup_cangw.sh",
-    "kod/ECU_containers_poc/gw/setup_cangw.sh",
-    "biljeske/08_12_2023.md",
-    "slike/screenshot_terminal_can4docker.png",
-    "kod/vxcandocker_test/compose.yml",
-    "kod/vxcandocker_test",
-    "kod/can4docker_test/compose.yml~",
-    "kod/can4docker_test/compose.yml",
-    "biljeske/17_11_2023.md",
     "biljeske/12_01_2024.md",
-    "slike/koncept2.png",
-    "slike/koncept2.jpg",
-    "biljeske/27_10_2023.md",
-    "slike/koncept1_zoom_out.jpg",
-    "slike/koncept1.jpg",
-    "biljeske/20_10_2023.md",
     "biljeske/10_11_2023.md",
+    "biljeske/08_03_2024.md",
+    "slike/cannelloni_1on1_communication.png",
+    "slike/maxhops3.png",
+    "kod/cannellonni_poc/Makefile",
+    "kod/cannellonni_poc/gw/cannelloni",
+    "kod/cannellonni_poc/ecu/cannelloni",
+    "kod/cannellonni_poc/gw/setup_gw.sh",
+    "kod/repos/cannelloni/doc/udp_format.md",
+    "kod/repos/cannelloni/doc/tcp_protocol.md",
+    "kod/repos/cannelloni/doc/firstexp.png",
+    "kod/repos/cannelloni/doc/cannelloni_tcp_flow.svg",
+    "kod/repos/cannelloni/README.md",
+    "kod/repos/agl-cluster-demo-dashboard/app/images/temperature-icon.png",
+    "kod/repos/agl-cluster-demo-dashboard/app/images/fuel-icon.png",
+    "kod/repos/agl-cluster-demo-dashboard/app/images/agl_title_793x211.png",
+    "kod/repos/agl-cluster-demo-dashboard/app/images/Utility_Logo_Grey-01.svg",
+    "kod/repos/agl-cluster-demo-dashboard/app/images/AGL_Icons_Seatbelt_yellow.svg",
+    "kod/repos/agl-cluster-demo-dashboard/app/images/AGL_Icons_Seatbelt_red.svg",
+    "kod/cannelloni/doc/udp_format.md",
+    "kod/cannelloni/doc/tcp_protocol.md",
+    "kod/cannelloni/README.md",
+    "biljeske/08_12_2023.md",
+    "biljeske/17_11_2023.md",
+    "biljeske/27_10_2023.md",
+    "biljeske/20_10_2023.md",
     "biljeske/03_11_2023.md",
     "Untitled.canvas",
-    "slike/izvedba2a.jpg",
-    "slike/izvedba1.jpg",
-    "slike/agl_flutter_dashboard_ivi.png",
     "kod/CAN-Examples/README.md",
     "].md"
   ]
