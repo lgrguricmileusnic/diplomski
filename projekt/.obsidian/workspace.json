@@ -13,9 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/08_03_2024.md",
+                "file": "biljeske/15_03_2024.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "ba31aa6444c48ccf",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "slike/gw_canneloni.png"
               }
             }
           },
@@ -23,9 +33,11 @@
             "id": "53caf95b8f7dc189",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "slike/cannelloni_1on1_communication.png"
+                "file": "biljeske/08_03_2024.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -105,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/08_03_2024.md",
+                "file": "biljeske/15_03_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/08_03_2024.md",
+                "file": "biljeske/15_03_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/08_03_2024.md"
+                "file": "biljeske/15_03_2024.md"
               }
             }
           }
@@ -168,6 +180,17 @@
   },
   "active": "0c1c63e66128605b",
   "lastOpenFiles": [
+    "biljeske/08_03_2024.md",
+    "biljeske/19_01_2024.md",
+    "biljeske/27_10_2023.md",
+    "slike/cannelloni_1on1_communication.png",
+    "slike/gw_canneloni.png",
+    "biljeske/15_03_2024.md",
+    "biljeske/03_11_2023.md",
+    "Pasted image 20240312184826.png",
+    "biljeske/08_12_2023.md",
+    "biljeske/12_01_2024.md",
+    "biljeske/pdf/lovro_grguricmileusnic_08_03_2023.pdf",
     "kod/candevstudio/test_projekt/test_projekt.cds",
     "kod/candevstudio/test_projekt/simple_timer.qml.1",
     "kod/candevstudio/test_projekt/simple_timer.qml",
@@ -175,16 +198,10 @@
     "kod/candevstudio/test_projekt/sample.qml",
     "kod/candevstudio/test_projekt",
     "kod/candevstudio",
-    "biljeske/19_01_2024.md",
-    "biljeske/12_01_2024.md",
     "biljeske/10_11_2023.md",
-    "biljeske/08_03_2024.md",
-    "slike/cannelloni_1on1_communication.png",
     "slike/maxhops3.png",
     "kod/cannellonni_poc/Makefile",
     "kod/cannellonni_poc/gw/cannelloni",
-    "kod/cannellonni_poc/ecu/cannelloni",
-    "kod/cannellonni_poc/gw/setup_gw.sh",
     "kod/repos/cannelloni/doc/udp_format.md",
     "kod/repos/cannelloni/doc/tcp_protocol.md",
     "kod/repos/cannelloni/doc/firstexp.png",
@@ -194,16 +211,11 @@
     "kod/repos/agl-cluster-demo-dashboard/app/images/fuel-icon.png",
     "kod/repos/agl-cluster-demo-dashboard/app/images/agl_title_793x211.png",
     "kod/repos/agl-cluster-demo-dashboard/app/images/Utility_Logo_Grey-01.svg",
-    "kod/repos/agl-cluster-demo-dashboard/app/images/AGL_Icons_Seatbelt_yellow.svg",
-    "kod/repos/agl-cluster-demo-dashboard/app/images/AGL_Icons_Seatbelt_red.svg",
     "kod/cannelloni/doc/udp_format.md",
     "kod/cannelloni/doc/tcp_protocol.md",
     "kod/cannelloni/README.md",
-    "biljeske/08_12_2023.md",
     "biljeske/17_11_2023.md",
-    "biljeske/27_10_2023.md",
     "biljeske/20_10_2023.md",
-    "biljeske/03_11_2023.md",
     "Untitled.canvas",
     "kod/CAN-Examples/README.md",
     "].md"
