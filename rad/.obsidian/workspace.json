@@ -1,52 +1,39 @@
 {
   "main": {
-    "id": "35032de8fc823263",
+    "id": "5614eb26951999b2",
     "type": "split",
     "children": [
       {
-        "id": "3cb8170af6a895ed",
+        "id": "ec9a5a1f9f9f473a",
         "type": "tabs",
         "children": [
           {
-            "id": "0c1c63e66128605b",
+            "id": "c8f87f4eea699e35",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/22_03_2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d71bfd646a028633",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/29_03_2024.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "d7f85f09dd556a3f",
+    "id": "8a7efbd1f2987c61",
     "type": "split",
     "children": [
       {
-        "id": "7b242d8dc612cfcf",
+        "id": "761925eec290f61d",
         "type": "tabs",
         "children": [
           {
-            "id": "1c06b94bc3c3ff5f",
+            "id": "dd574921bfae26a5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,12 +43,12 @@
             }
           },
           {
-            "id": "73ae4db9d9122cc4",
+            "id": "effbb0dd2cc8901a",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "nse",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,7 +58,7 @@
             }
           },
           {
-            "id": "d53daec916181e40",
+            "id": "5af5840d0750aac1",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -85,20 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "1ce07bdfb29ad758",
+    "id": "5f5aa12e6906da5b",
     "type": "split",
     "children": [
       {
-        "id": "8a5524c4683b4546",
+        "id": "e923ee3db02aa2f6",
         "type": "tabs",
         "children": [
           {
-            "id": "1d08c0f7534a497e",
+            "id": "af183926c60a6011",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/29_03_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,19 +97,19 @@
             }
           },
           {
-            "id": "0e64a6e060aaf3f6",
+            "id": "5ee91a356f9e8e55",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/29_03_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "331b058b5a461c76",
+            "id": "f805c19c426cd8c3",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,12 +120,12 @@
             }
           },
           {
-            "id": "7560d9b341f829f1",
+            "id": "0f6eb438b51bc10b",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/19_01_2024.md"
+                "file": "biljeske/29_03_2024.md"
               }
             }
           }
@@ -159,48 +146,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d71bfd646a028633",
+  "active": "c8f87f4eea699e35",
   "lastOpenFiles": [
-    "biljeske/22_03_2024.md",
-    "biljeske/19_01_2024.md",
-    "29_03_2024.md",
-    "slike/gw_canneloni.png",
-    "biljeske/08_12_2023.md",
-    "biljeske/12_01_2024.md",
-    "slike/maxhops3.png",
-    "biljeske/15_03_2024.md",
-    "biljeske/08_03_2024.md",
-    "biljeske/27_10_2023.md",
-    "slike/cannelloni_1on1_communication.png",
-    "biljeske/03_11_2023.md",
-    "Pasted image 20240312184826.png",
-    "biljeske/pdf/lovro_grguricmileusnic_08_03_2023.pdf",
-    "kod/candevstudio/test_projekt/test_projekt.cds",
-    "kod/candevstudio/test_projekt/simple_timer.qml.1",
-    "kod/candevstudio/test_projekt/simple_timer.qml",
-    "kod/candevstudio/test_projekt/simple_forwarder.qml",
-    "kod/candevstudio/test_projekt/sample.qml",
-    "kod/candevstudio/test_projekt",
-    "kod/candevstudio",
-    "biljeske/10_11_2023.md",
-    "kod/cannellonni_poc/Makefile",
-    "kod/cannellonni_poc/gw/cannelloni",
-    "kod/repos/cannelloni/doc/udp_format.md",
-    "kod/repos/cannelloni/doc/tcp_protocol.md",
-    "kod/repos/cannelloni/doc/firstexp.png",
-    "kod/repos/cannelloni/doc/cannelloni_tcp_flow.svg",
-    "kod/repos/cannelloni/README.md",
-    "kod/repos/agl-cluster-demo-dashboard/app/images/temperature-icon.png",
-    "kod/repos/agl-cluster-demo-dashboard/app/images/fuel-icon.png",
-    "kod/repos/agl-cluster-demo-dashboard/app/images/agl_title_793x211.png",
-    "kod/repos/agl-cluster-demo-dashboard/app/images/Utility_Logo_Grey-01.svg",
-    "kod/cannelloni/doc/udp_format.md",
-    "kod/cannelloni/doc/tcp_protocol.md",
-    "kod/cannelloni/README.md",
-    "biljeske/17_11_2023.md",
-    "biljeske/20_10_2023.md",
-    "Untitled.canvas",
-    "kod/CAN-Examples/README.md",
-    "].md"
+    "biljeske/29_03_2024.md"
   ]
 }
