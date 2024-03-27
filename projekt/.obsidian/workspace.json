@@ -13,45 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/22_03_2024.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ba31aa6444c48ccf",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "slike/gw_canneloni.png"
-              }
-            }
-          },
-          {
-            "id": "79eee599260dc8dc",
+            "id": "d71bfd646a028633",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "29_03_2024.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "4347be50e11473d5",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "slike/maxhops3.png"
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1ce07bdfb29ad758",
@@ -118,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "29_03_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "29_03_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/19_01_2024.md"
+                "file": "29_03_2024.md"
               }
             }
           }
@@ -179,14 +161,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0c1c63e66128605b",
+  "active": "d71bfd646a028633",
   "lastOpenFiles": [
+    "biljeske/22_03_2024.md",
+    "29_03_2024.md",
+    "biljeske/19_01_2024.md",
+    "slike/gw_canneloni.png",
     "biljeske/08_12_2023.md",
     "biljeske/12_01_2024.md",
-    "biljeske/19_01_2024.md",
     "slike/maxhops3.png",
-    "biljeske/22_03_2024.md",
-    "slike/gw_canneloni.png",
     "biljeske/15_03_2024.md",
     "biljeske/08_03_2024.md",
     "biljeske/27_10_2023.md",
