@@ -149,6 +149,8 @@
   },
   "active": "c8f87f4eea699e35",
   "lastOpenFiles": [
+    "kod/dockercan/cmd/netplugin/__debug_bin3737643583",
+    "kod/dockercan/cmd/netplugin/__debug_bin4175984842",
     "slike/prva_proba_driver.png",
     "biljeske/29_03_2024.md",
     "kod/dockercan/cmd/netplugin/__debug_bin2226908601",
@@ -160,7 +162,6 @@
     "kod/dockercan/internal/wrappers/ipw/wip.go",
     "kod/dockercan/internal/wrappers/ipw",
     "kod/dockercan/internal/wrappers/wip/wip.go",
-    "kod/dockercan/internal/wrappers/wip",
     "biljeske/08_03_2024.md",
     "biljeske/19_01_2024.md"
   ]
