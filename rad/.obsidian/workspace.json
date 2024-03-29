@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ip",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -148,6 +149,19 @@
   },
   "active": "c8f87f4eea699e35",
   "lastOpenFiles": [
-    "biljeske/29_03_2024.md"
+    "slike/prva_proba_driver.png",
+    "biljeske/29_03_2024.md",
+    "kod/dockercan/cmd/netplugin/__debug_bin2226908601",
+    "kod/dockercan/internal/driver/util.go",
+    "kod/dockercan/internal/wrappers/cangww/cangww.go",
+    "kod/dockercan/internal/wrappers/ipw/ipw.go",
+    "kod/dockercan/internal/wrappers/cangww/wcangw.go",
+    "kod/dockercan/internal/wrappers/cangww",
+    "kod/dockercan/internal/wrappers/ipw/wip.go",
+    "kod/dockercan/internal/wrappers/ipw",
+    "kod/dockercan/internal/wrappers/wip/wip.go",
+    "kod/dockercan/internal/wrappers/wip",
+    "biljeske/08_03_2024.md",
+    "biljeske/19_01_2024.md"
   ]
 }
