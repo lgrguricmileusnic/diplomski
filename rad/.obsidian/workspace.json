@@ -18,6 +18,26 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3755b35b621ca8a1",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "slike/isotp_frames.png"
+              }
+            }
+          },
+          {
+            "id": "b1c09011876c98b1",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "slike/docker_compose_dockercan_test.png"
+              }
+            }
           }
         ]
       }
@@ -38,7 +58,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTimeReverse"
               }
             }
           },
@@ -65,8 +85,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -149,20 +168,27 @@
   },
   "active": "c8f87f4eea699e35",
   "lastOpenFiles": [
-    "kod/dockercan/cmd/netplugin/__debug_bin3737643583",
-    "kod/dockercan/cmd/netplugin/__debug_bin4175984842",
-    "slike/prva_proba_driver.png",
+    "biljeske/22_03_2024.md",
     "biljeske/29_03_2024.md",
-    "kod/dockercan/cmd/netplugin/__debug_bin2226908601",
-    "kod/dockercan/internal/driver/util.go",
-    "kod/dockercan/internal/wrappers/cangww/cangww.go",
-    "kod/dockercan/internal/wrappers/ipw/ipw.go",
-    "kod/dockercan/internal/wrappers/cangww/wcangw.go",
-    "kod/dockercan/internal/wrappers/cangww",
-    "kod/dockercan/internal/wrappers/ipw/wip.go",
-    "kod/dockercan/internal/wrappers/ipw",
-    "kod/dockercan/internal/wrappers/wip/wip.go",
+    "biljeske/15_03_2024.md",
+    "biljeske/pdf/lovro_grguricmileusnic_29_03_2024.pdf",
+    "slike/isotp_frames.png",
+    "biljeske/19_01_2024.md",
     "biljeske/08_03_2024.md",
-    "biljeske/19_01_2024.md"
+    "kod/dockercan/build/dockercan/dockercan",
+    "kod/dockercan/build/dockercan",
+    "kod/dockercan/LICENSE",
+    "kod/dockercan/build",
+    "kod/dockercan_test/build/dockercan/dockercan",
+    "kod/dockercan_test/build/dockercan",
+    "kod/dockercan_test/build",
+    "kod/dockercan_test/scripts/install/install.sh",
+    "kod/dockercan_test/scripts/install/dockercan.service",
+    "kod/dockercan_test/README.md",
+    "kod/dockercan/README.md",
+    "slike/docker_compose_dockercan_test.png",
+    "Pasted image 20240330152001.png",
+    "Pasted image 20240330151957.png",
+    "slike/prva_proba_driver.png"
   ]
 }
