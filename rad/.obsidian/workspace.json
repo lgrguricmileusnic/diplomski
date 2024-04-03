@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/29_03_2024.md",
+                "file": "biljeske/05_04_2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4197831db4bcf2a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "biljeske/12_01_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ip",
+                "query": "plugin",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/29_03_2024.md",
+                "file": "biljeske/05_04_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/29_03_2024.md",
+                "file": "biljeske/05_04_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/29_03_2024.md"
+                "file": "biljeske/05_04_2024.md"
               }
             }
           }
@@ -168,12 +180,18 @@
   },
   "active": "c8f87f4eea699e35",
   "lastOpenFiles": [
-    "biljeske/22_03_2024.md",
+    "slike/example_source_code_isotp.png",
+    "biljeske/05_04_2024.md",
     "biljeske/29_03_2024.md",
+    "slike/linuxcan_isotp.png",
+    "slike/canfd_can_structs.png",
+    "biljeske/22_03_2024.md",
+    "biljeske/12_01_2024.md",
+    "biljeske/19_01_2024.md",
+    "biljeske/pdf/lovro_grguricmileusnic_22_03_2024.pdf",
     "biljeske/15_03_2024.md",
     "biljeske/pdf/lovro_grguricmileusnic_29_03_2024.pdf",
     "slike/isotp_frames.png",
-    "biljeske/19_01_2024.md",
     "biljeske/08_03_2024.md",
     "kod/dockercan/build/dockercan/dockercan",
     "kod/dockercan/build/dockercan",
@@ -183,7 +201,6 @@
     "kod/dockercan_test/build/dockercan",
     "kod/dockercan_test/build",
     "kod/dockercan_test/scripts/install/install.sh",
-    "kod/dockercan_test/scripts/install/dockercan.service",
     "kod/dockercan_test/README.md",
     "kod/dockercan/README.md",
     "slike/docker_compose_dockercan_test.png",
