@@ -1,3 +1,6 @@
 [submodule "rad/kod/dockercan"]
 	path = rad/kod/dockercan
 	url = https://github.com/lgrguricmileusnic/dockercan
+[submodule "rad/kod/virtual-vehicle"]
+	path = rad/kod/virtual-vehicle
+	url = git@github.com:lgrguricmileusnic/virtual-vehicle.git
