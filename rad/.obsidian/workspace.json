@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "a26fd96d343b0feb",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "slike/uds_kb_standards.png"
+              }
+            }
+          },
+          {
             "id": "4197831db4bcf2a4",
             "type": "leaf",
             "state": {
@@ -51,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -117,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/05_04_2024.md",
+                "file": "slike/uds_kb_standards.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/05_04_2024.md",
+                "file": "slike/uds_kb_standards.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/05_04_2024.md"
+                "file": "slike/uds_kb_standards.png"
               }
             }
           }
@@ -178,12 +189,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8f87f4eea699e35",
+  "active": "a26fd96d343b0feb",
   "lastOpenFiles": [
+    "biljeske/05_04_2024.md",
+    "slike/uds_kb_functionalities.png",
+    "slike/uds_kb_standards.png",
     "kod/virtual-vehicle/virtual_vehicle/ecu_template/can.py",
     "kod/virtual-vehicle/virtual_vehicle/ecu_template/uds.py",
     "slike/socket_test_py.png",
-    "biljeske/05_04_2024.md",
     "kod/virtual-vehicle/virtual_vehicle/ecu_template/test.py",
     "kod/virtual-vehicle/virtual_vehicle/ecu_template/__init__.py",
     "kod/virtual-vehicle/virtual_vehicle/ecu_template/socketcan.py",
@@ -192,7 +205,6 @@
     "kod/virtual-vehicle/virtual_vehicle/ecu_template",
     "kod/virtual-vehicle/virtual_vehicle/__init__.py",
     "kod/virtual-vehicle/virtual_vehicle",
-    "kod/virtual-vehicle/venv/bin/activate",
     "slike/isotpsend_candump_isotpdump_cansend.png",
     "biljeske/12_01_2024.md",
     "biljeske/19_01_2024.md",
@@ -207,8 +219,6 @@
     "kod/dockercan_test/README.md",
     "kod/dockercan/README.md",
     "slike/docker_compose_dockercan_test.png",
-    "Pasted image 20240330152001.png",
-    "Pasted image 20240330151957.png",
-    "slike/prva_proba_driver.png"
+    "Pasted image 20240330152001.png"
   ]
 }
