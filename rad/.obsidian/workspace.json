@@ -13,6 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "biljeske/12_04_2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5c4ffe9acb03798b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "biljeske/29_03_2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "79258881c2760bd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "biljeske/05_04_2024.md",
                 "mode": "source",
                 "source": false
@@ -61,8 +85,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -128,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "slike/uds_kb_standards.png",
+                "file": "biljeske/12_04_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "slike/uds_kb_standards.png",
+                "file": "biljeske/12_04_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "slike/uds_kb_standards.png"
+                "file": "biljeske/12_04_2024.md"
               }
             }
           }
@@ -189,27 +212,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a26fd96d343b0feb",
+  "active": "c8f87f4eea699e35",
   "lastOpenFiles": [
+    "kod/ecu_template/ecu/can_controller.py",
+    "kod/ecu_template/ecu/handlers/__pycache__/__init__.cpython-311.pyc",
+    "kod/ecu_template/ecu/callbacks/__pycache__/__init__.cpython-311.pyc",
+    "kod/ecu_template/ecu/__pycache__/__init__.cpython-311.pyc",
+    "kod/ecu_template/ecu/callbacks/__init__.py",
+    "kod/ecu_template/ecu/handlers/__init__.py",
+    "kod/ecu_template/ecu/__init__.py",
+    "kod/ecu_template/ecu/__pycache__/ecu.cpython-311.pyc",
+    "kod/ecu_template/ecu/__pycache__",
+    "kod/ecu_template/ecu/ecu.py",
+    "kod/ecu_template/ecu/kecu.py",
     "biljeske/05_04_2024.md",
-    "slike/uds_kb_functionalities.png",
+    "biljeske/29_03_2024.md",
+    "biljeske/12_04_2024.md",
     "slike/uds_kb_standards.png",
-    "kod/virtual-vehicle/virtual_vehicle/ecu_template/can.py",
-    "kod/virtual-vehicle/virtual_vehicle/ecu_template/uds.py",
+    "slike/uds_kb_functionalities.png",
     "slike/socket_test_py.png",
-    "kod/virtual-vehicle/virtual_vehicle/ecu_template/test.py",
-    "kod/virtual-vehicle/virtual_vehicle/ecu_template/__init__.py",
-    "kod/virtual-vehicle/virtual_vehicle/ecu_template/socketcan.py",
-    "kod/virtual-vehicle/virtual_vehicle/ecu_template/ecu.py",
-    "kod/virtual-vehicle/virtual_vehicle/generate.py",
-    "kod/virtual-vehicle/virtual_vehicle/ecu_template",
-    "kod/virtual-vehicle/virtual_vehicle/__init__.py",
-    "kod/virtual-vehicle/virtual_vehicle",
     "slike/isotpsend_candump_isotpdump_cansend.png",
     "biljeske/12_01_2024.md",
     "biljeske/19_01_2024.md",
     "slike/example_source_code_isotp.png",
-    "biljeske/29_03_2024.md",
     "slike/linuxcan_isotp.png",
     "slike/canfd_can_structs.png",
     "biljeske/22_03_2024.md",
