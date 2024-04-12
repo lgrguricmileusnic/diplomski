@@ -214,6 +214,7 @@
   },
   "active": "c8f87f4eea699e35",
   "lastOpenFiles": [
+    "kod/ecu_template",
     "kod/ecu-template/ecu_template/controllers/uds.py~",
     "kod/ecu-template/venv/lib/python3.11/site-packages/can_isotp-2.0.4.dist-info/REQUESTED",
     "kod/ecu-template/venv/lib/python3.11/site-packages/can_isotp-2.0.4.dist-info/INSTALLER",
@@ -224,7 +225,6 @@
     "kod/ecu-template/venv/lib/python3.11/site-packages/isotp/__pycache__/protocol.cpython-311.pyc",
     "kod/ecu-template/venv/lib/python3.11/site-packages/isotp/__pycache__/errors.cpython-311.pyc",
     "kod/ecu-template/venv/lib/python3.11/site-packages/isotp/__pycache__/can_message.cpython-311.pyc",
-    "kod/ecu-template/venv/lib/python3.11/site-packages/isotp/__pycache__/address.cpython-311.pyc",
     "slike/notifier_lock.png",
     "biljeske/12_04_2024.md",
     "biljeske/05_04_2024.md",
