@@ -3,4 +3,7 @@
 	url = https://github.com/lgrguricmileusnic/dockercan
 [submodule "rad/kod/virtual-vehicle"]
 	path = rad/kod/virtual-vehicle
-	url = git@github.com:lgrguricmileusnic/virtual-vehicle.git
+	url =  https://github.com/lgrguricmileusnic/virtual-vehicle
+[submodule "rad/kod/ecu-template"]
+	path = rad/kod/ecu-template
+	url = https://github.com/lgrguricmileusnic/ecu-template.git
