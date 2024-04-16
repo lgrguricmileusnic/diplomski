@@ -4,84 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "ec9a5a1f9f9f473a",
+        "id": "1d118a151b8febca",
         "type": "tabs",
         "children": [
           {
-            "id": "c8f87f4eea699e35",
+            "id": "072e2818308da384",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/12_04_2024.md",
+                "file": "biljeske/19_04_2024.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "5c4ffe9acb03798b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "biljeske/29_03_2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "79258881c2760bd3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "biljeske/05_04_2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a26fd96d343b0feb",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "slike/uds_kb_standards.png"
-              }
-            }
-          },
-          {
-            "id": "4197831db4bcf2a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "biljeske/12_01_2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3755b35b621ca8a1",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "slike/isotp_frames.png"
-              }
-            }
-          },
-          {
-            "id": "b1c09011876c98b1",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "slike/docker_compose_dockercan_test.png"
               }
             }
           }
@@ -151,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/12_04_2024.md",
+                "file": "biljeske/19_04_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/12_04_2024.md",
+                "file": "biljeske/19_04_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/12_04_2024.md"
+                "file": "biljeske/19_04_2024.md"
               }
             }
           }
@@ -212,36 +146,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8f87f4eea699e35",
+  "active": "072e2818308da384",
   "lastOpenFiles": [
-    "kod/ecu-template/requirements.txt",
-    "kod/ecu-template/main.py",
-    "kod/ecu-template/ecu_template/controllers/uds_controller/isotp_notifier/notifier.py",
-    "kod/ecu-template/ecu_template/controllers/uds_controller/isotp_notifier/listener.py",
-    "kod/ecu-template/ecu_template/controllers/uds_controller/uds.py",
-    "kod/ecu-template/ecu_template/controllers/uds_controller/isotp_notifier",
-    "kod/ecu-template/ecu_template/controllers/can_controller/can_raw.py",
-    "kod/ecu-template/ecu_template/models/ecu_model.py",
-    "kod/ecu-template/ecu_template/controllers/uds_controller",
-    "kod/ecu-template/ecu_template/controllers/controller.py",
-    "kod/ecu-template/ecu_template/controllers/can_controller",
-    "slike/isotp_slow.png",
-    "biljeske/12_04_2024.md",
-    "slike/notifier_lock.png",
+    "kod/ecu-template/main.py~",
+    "kod/ecu-template/ecu_template/ecu.py~",
+    "kod/ecu-template/ecu_template/handlers/can/can_handler.py~",
+    "kod/ecu-template/ecu_template/handlers/uds/uds_handler.py~",
+    "kod/ecu-template/ecu_template/controllers/uds/isotp/notifier.py~",
+    "kod/ecu-template/ecu_template/controllers/can/can_controller.py~",
+    "kod/ecu-template/venv/bin/blackd",
+    "kod/ecu-template/venv/bin/black",
+    "kod/ecu-template/venv/lib/python3.11/site-packages/blib2to3/__pycache__/pytree.cpython-311.pyc",
+    "kod/ecu-template/venv/lib/python3.11/site-packages/blackd/__pycache__/middlewares.cpython-311.pyc",
+    "kod/ecu-template/venv/lib/python3.11/site-packages/blackd/__pycache__/__main__.cpython-311.pyc",
+    "kod/ecu-template/venv/lib/python3.11/site-packages/black-24.4.0.dist-info/licenses/AUTHORS.md",
+    "slike/uds_messages.png",
+    "biljeske/19_04_2024.md",
+    "slike/simple_polling_uds.png",
+    "slike/docker_compose_dockercan_test.png",
+    "slike/isotp_frames.png",
+    "biljeske/12_01_2024.md",
+    "slike/uds_kb_standards.png",
     "biljeske/05_04_2024.md",
     "biljeske/29_03_2024.md",
-    "slike/uds_kb_standards.png",
+    "biljeske/12_04_2024.md",
+    "slike/isotp_slow.png",
+    "slike/notifier_lock.png",
     "slike/uds_kb_functionalities.png",
     "slike/socket_test_py.png",
     "slike/isotpsend_candump_isotpdump_cansend.png",
-    "biljeske/12_01_2024.md",
     "biljeske/19_01_2024.md",
-    "slike/example_source_code_isotp.png",
-    "slike/linuxcan_isotp.png",
-    "slike/canfd_can_structs.png",
     "biljeske/22_03_2024.md",
     "biljeske/15_03_2024.md",
-    "slike/isotp_frames.png",
     "biljeske/08_03_2024.md",
     "kod/dockercan_test/README.md",
     "kod/dockercan/README.md"
