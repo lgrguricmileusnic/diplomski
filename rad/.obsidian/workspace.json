@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1d118a151b8febca",
+        "id": "87711ba039fee6ba",
         "type": "tabs",
         "children": [
           {
-            "id": "072e2818308da384",
+            "id": "498af19380943a9e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "biljeske/19_04_2024.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/19_04_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/19_04_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "biljeske/19_04_2024.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,37 +138,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "072e2818308da384",
+  "active": "498af19380943a9e",
   "lastOpenFiles": [
+    "slike/RMBA_flow_example.png",
+    "biljeske/26_04_2024.md",
+    "kod/ecu-template/impl/uds_handler.py~",
+    "kod/ecu-template/impl/config.py~",
+    "kod/ecu-template/impl/can_handler.py~",
+    "biljeske/22_03_2024.md",
+    "biljeske/29_03_2024.md",
+    "biljeske/05_04_2024.md",
+    "biljeske/12_04_2024.md",
+    "biljeske/19_04_2024.md",
+    "slike/UDS_RMBA_scapy.png",
+    "slike/UDS_ERPR_scapy.png",
+    "slike/UDS_base_scapy.png",
+    "biljeske/pdf/lovro_grguricmileusnic_19_04_2024.pdf",
     "kod/ecu-template/main.py~",
+    "kod/ecu-template/ecu_template/notifier/can/can_notifier.py~",
     "kod/ecu-template/ecu_template/ecu.py~",
-    "kod/ecu-template/ecu_template/handlers/can/can_handler.py~",
-    "kod/ecu-template/ecu_template/handlers/uds/uds_handler.py~",
-    "kod/ecu-template/ecu_template/controllers/uds/isotp/notifier.py~",
-    "kod/ecu-template/ecu_template/controllers/can/can_controller.py~",
-    "kod/ecu-template/venv/bin/blackd",
-    "kod/ecu-template/venv/bin/black",
-    "kod/ecu-template/venv/lib/python3.11/site-packages/blib2to3/__pycache__/pytree.cpython-311.pyc",
-    "kod/ecu-template/venv/lib/python3.11/site-packages/blackd/__pycache__/middlewares.cpython-311.pyc",
-    "kod/ecu-template/venv/lib/python3.11/site-packages/blackd/__pycache__/__main__.cpython-311.pyc",
+    "kod/ecu-template/ecu_template/controller/can/can_controller.py~",
+    "kod/ecu-template/ecu_template/notifier/uds/__pycache__/uds_notifier.cpython-311.pyc",
+    "kod/ecu-template/ecu_template/notifier/__pycache__/notifier.cpython-311.pyc",
     "kod/ecu-template/venv/lib/python3.11/site-packages/black-24.4.0.dist-info/licenses/AUTHORS.md",
     "slike/uds_messages.png",
-    "biljeske/19_04_2024.md",
     "slike/simple_polling_uds.png",
     "slike/docker_compose_dockercan_test.png",
     "slike/isotp_frames.png",
     "biljeske/12_01_2024.md",
     "slike/uds_kb_standards.png",
-    "biljeske/05_04_2024.md",
-    "biljeske/29_03_2024.md",
-    "biljeske/12_04_2024.md",
     "slike/isotp_slow.png",
-    "slike/notifier_lock.png",
-    "slike/uds_kb_functionalities.png",
-    "slike/socket_test_py.png",
-    "slike/isotpsend_candump_isotpdump_cansend.png",
     "biljeske/19_01_2024.md",
-    "biljeske/22_03_2024.md",
     "biljeske/15_03_2024.md",
     "biljeske/08_03_2024.md",
     "kod/dockercan_test/README.md",
