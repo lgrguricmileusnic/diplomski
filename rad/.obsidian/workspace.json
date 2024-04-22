@@ -11,8 +11,12 @@
             "id": "498af19380943a9e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "biljeske/26_04_2024.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "biljeske/26_04_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "biljeske/26_04_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "biljeske/26_04_2024.md"
+              }
             }
           }
         ]
@@ -140,38 +148,51 @@
   },
   "active": "498af19380943a9e",
   "lastOpenFiles": [
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/main/led_strip_rmt_ws2812_main.c",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/main/idf_component.yml",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/main/CMakeLists.txt",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/main/led_strip_spi_ws2812_main.c",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/main/idf_component.yml",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/main/CMakeLists.txt",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/main",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/CMakeLists.txt",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/main",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/CMakeLists.txt",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/src/led_strip_spi_dev.c",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/api.md",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/README.md",
+    "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/CHANGELOG.md",
+    "kod/zadaci/common/ecu_binary/README.md",
+    "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
+    "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
+    "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/api.md",
+    "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/README.md",
+    "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/CHANGELOG.md",
+    "kod/zadaci/common/esp_projekt/README.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/api.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/README.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/CHANGELOG.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/README.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/api.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/README.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/CHANGELOG.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/README.md",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
     "slike/RMBA_flow_example.png",
-    "biljeske/26_04_2024.md",
-    "kod/ecu-template/impl/uds_handler.py~",
-    "kod/ecu-template/impl/config.py~",
-    "kod/ecu-template/impl/can_handler.py~",
-    "biljeske/22_03_2024.md",
-    "biljeske/29_03_2024.md",
-    "biljeske/05_04_2024.md",
-    "biljeske/12_04_2024.md",
-    "biljeske/19_04_2024.md",
     "slike/UDS_RMBA_scapy.png",
     "slike/UDS_ERPR_scapy.png",
     "slike/UDS_base_scapy.png",
-    "biljeske/pdf/lovro_grguricmileusnic_19_04_2024.pdf",
-    "kod/ecu-template/main.py~",
-    "kod/ecu-template/ecu_template/notifier/can/can_notifier.py~",
-    "kod/ecu-template/ecu_template/ecu.py~",
-    "kod/ecu-template/ecu_template/controller/can/can_controller.py~",
-    "kod/ecu-template/ecu_template/notifier/uds/__pycache__/uds_notifier.cpython-311.pyc",
-    "kod/ecu-template/ecu_template/notifier/__pycache__/notifier.cpython-311.pyc",
-    "kod/ecu-template/venv/lib/python3.11/site-packages/black-24.4.0.dist-info/licenses/AUTHORS.md",
     "slike/uds_messages.png",
     "slike/simple_polling_uds.png",
     "slike/docker_compose_dockercan_test.png",
     "slike/isotp_frames.png",
-    "biljeske/12_01_2024.md",
     "slike/uds_kb_standards.png",
-    "slike/isotp_slow.png",
-    "biljeske/19_01_2024.md",
-    "biljeske/15_03_2024.md",
-    "biljeske/08_03_2024.md",
-    "kod/dockercan_test/README.md",
-    "kod/dockercan/README.md"
+    "slike/isotp_slow.png"
   ]
 }
