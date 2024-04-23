@@ -22,9 +22,12 @@ class UDSNotifier(Notifier):
 
     def _rx_thread(self):
         while self._running:
-            if packet := self.socket.recv():
-                for listener in self.listeners:
-                    listener.on_message_received(packet)
+            try:
+                if packet := self.socket.recv():
+                    for listener in self.listeners:
+                        listener.on_message_received(packet)
+            except Exception as e:
+                print(e)
 
     def start(self):
         self._running = True

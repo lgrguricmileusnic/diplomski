@@ -3,7 +3,6 @@ from scapy.contrib.automotive.uds import *
 from ecu_template.handler.uds.uds_handler import UDSHandler
 from impl.ecu_model import ECUModelImpl
 
-
 def _get_size_from_UDS_RMBA(msg: UDS_RMBA):
     match msg.memorySizeLen:
         case 1:
@@ -44,15 +43,19 @@ class UDSHandlerImpl(UDSHandler):
 
     def _handle_UDS_RMBA(self, msg: UDS):
         # Address must be 32bit
-        if msg.memoryAddressLen != 4:
+        if msg.memoryAddressLen != 4 or msg.memorySizeLen != 1:
             self._send_UDS_NR(msg, 0x13)
             return
 
         size = _get_size_from_UDS_RMBA(msg)
         address = msg.memoryAddress4
         try:
-            self.isotp.send(UDS() / UDS_RMBAPR(dataRecord=self.ecu.get_data_from_memory(address, size)))
-        except IndexError:
+            data = self.ecu.get_data_from_memory(address, size)
+            if len(data) == 0:
+                self._send_UDS_NR(msg, 0x31)
+            else:
+                self.isotp.send(UDS() / UDS_RMBAPR(dataRecord=data))
+        except Exception:
             self._send_UDS_NR(msg, 0x31)
 
     def _handle_UDS_ER(self, msg):
