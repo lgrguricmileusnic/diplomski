@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "87711ba039fee6ba",
+        "id": "b5d0b756f35c0793",
         "type": "tabs",
         "children": [
           {
-            "id": "498af19380943a9e",
+            "id": "8f2868228aa95a5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "plugin",
+                "query": "helper",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -146,20 +147,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "498af19380943a9e",
+  "active": "8f2868228aa95a5b",
   "lastOpenFiles": [
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/README.md~",
+    "biljeske/15_03_2024.md",
+    "kod/dockercan/plugin/config.json",
+    "kod/dockercan/plugin/rootfs/var",
+    "kod/dockercan/plugin/rootfs/usr",
+    "kod/dockercan/plugin/rootfs/tmp",
+    "kod/dockercan/plugin/rootfs/sys",
+    "kod/dockercan/plugin/rootfs/srv",
+    "kod/dockercan/plugin/rootfs/sbin",
+    "kod/dockercan/plugin/rootfs/run/docker/plugins",
+    "kod/dockercan/plugin/rootfs/run/docker",
+    "kod/dockercan/plugin/rootfs/run",
+    "kod/dockercan/README.md",
+    "biljeske/26_04_2024.md",
+    "biljeske/22_03_2024.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/README.md",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/solution.py~",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/binary",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/kod/ecu/venv/lib/python3.11/site-packages/scapy/sendrecv.py~",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/kod/ecu/impl/uds_handler.py~",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/kod/ecu/ecu_template/notifier/uds/uds_notifier.py~",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/binary.elf",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/kod/ecu/impl/ecu_model.py~",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/kod/ecu/impl/__pycache__/uds_handler.cpython-311.pyc",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/kod/ecu/impl/__pycache__/ecu_model.cpython-311.pyc",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/kod/ecu/impl/__pycache__/can_handler.cpython-311.pyc",
     "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
     "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
     "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/api.md",
@@ -181,9 +185,6 @@
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/api.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/README.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/CHANGELOG.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/README.md",
     "slike/RMBA_flow_example.png",
     "slike/UDS_RMBA_scapy.png",
     "slike/UDS_ERPR_scapy.png",
