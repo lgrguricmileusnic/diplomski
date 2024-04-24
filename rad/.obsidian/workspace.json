@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/26_04_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/26_04_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/19_01_2024.md",
+                "file": "biljeske/26_04_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/19_01_2024.md"
+                "file": "biljeske/26_04_2024.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "def59550dd8314d6",
   "lastOpenFiles": [
+    "biljeske/19_01_2024.md",
     "kod/dockercan/build/dockercan_remote",
     "kod/dockercan/cmd/dockercan_remote/dockercan_remote.go",
     "kod/dockercan/cmd/dockercan_remote/dockercan_tcp.go",
@@ -159,7 +160,6 @@
     "kod/dockercan/deployments/example_compose_tcp",
     "kod/dockercan/plugin/rootfs/var/run/user/1000/systemd/transient/app-flatpak-com.discordapp.Discord-175233.scope",
     "kod/dockercan/plugin/rootfs/var/run/systemd/journal/streams/8:614579",
-    "kod/dockercan/plugin/rootfs/var/run/user/1000/systemd/transient/app-flatpak-com.discordapp.Discord-175176.scope",
     "biljeske/26_04_2024.md",
     "biljeske/15_03_2024.md",
     "kod/dockercan/README.md",
