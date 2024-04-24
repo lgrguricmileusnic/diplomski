@@ -4,7 +4,7 @@ from scapy.contrib.automotive.uds import *
 # rx_id i tx_id je potrebno saznati pomocu caringcariboua,
 # kao i dostupnost ReadMemoryByAddress servisa
 
-sock = ISOTPNativeSocket("vcan0", rx_id=0x101, tx_id=0x100, basecls=UDS)
+sock = ISOTPNativeSocket("dcan0", rx_id=0x101, tx_id=0x100, basecls=UDS)
 
 # duljinu size polja treba pogoditi (opcije su 1-4 okteta)
 # duljina adrese se moze pogoditi iz teksta zadatka (32 bitna rijec)
