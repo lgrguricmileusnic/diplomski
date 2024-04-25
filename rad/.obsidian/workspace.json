@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
+                "file": "biljeske/26_04_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
+                "file": "biljeske/26_04_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
+                "file": "biljeske/26_04_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md"
+                "file": "biljeske/26_04_2024.md"
               }
             }
           }
@@ -160,25 +160,26 @@
   },
   "active": "def59550dd8314d6",
   "lastOpenFiles": [
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/uds1_zadatak.zip",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/impl/uds_handler.py~",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/main.py~",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/impl/ecu_model.py~",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/top_level.txt",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/WHEEL",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/REQUESTED",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/RECORD",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/METADATA",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/INSTALLER",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/COPYING",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/zadatak.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/rjesenje.md",
     "biljeske/19_04_2024.md",
     "biljeske/26_04_2024.md",
-    "biljeske/pdf/lovro_grguricmileusnic_26_04_2024.pdf",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/binary",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/kod/ecu/main.py~",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/setup.md.md",
     "biljeske/12_04_2024.md",
     "biljeske/05_04_2024.md",
     "biljeske/19_01_2024.md",
-    "kod/dockercan/build/dockercan_remote",
-    "kod/dockercan/cmd/dockercan_remote/dockercan_remote.go",
-    "kod/dockercan/cmd/dockercan_remote/dockercan_tcp.go",
-    "kod/dockercan/cmd/dockercan_remote",
-    "kod/dockercan/build/dockercan",
-    "kod/dockercan/build",
     "biljeske/15_03_2024.md",
     "kod/dockercan/README.md",
     "biljeske/22_03_2024.md",
