@@ -26,9 +26,16 @@ class UDSHandlerImpl(UDSHandler):
         )
         self.callbacks: dict = {UDS_RMBA: self._handle_UDS_RMBA,
                                 UDS_ER: self._handle_UDS_ER,
-                                UDS_DSC: self._handle_UDS_DSC}
+                                UDS_DSC: self._handle_UDS_DSC,
+                                UDS_RDBI: self._handle_UDS_RDBI}
         # IDs discoverable by caringcaribou
-        self.discoverable_service_ids = [0x10, 0x11, 0x23]
+        self.discoverable_service_ids = [0x10, 0x11, 0x22, 0x23]
+
+    class DBI_VIN(Packet):
+        name = "DataByIdentifier_IP_Packet"
+        fields_desc = [
+            StrField('vin', b"", fmt="B")
+        ]
 
     def handle_msg(self, msg: UDS):
         msg_type = type(msg.payload)
@@ -42,17 +49,38 @@ class UDSHandlerImpl(UDSHandler):
         else:
             self._send_UDS_NR(msg, 0x11)
 
+    def _handle_UDS_SA(self):
+        pass
+
+    def _handle_UDS_RDBI(self, msg: UDS):
+        rdbi = msg.payload
+        if not isinstance(rdbi, UDS_RDBI):
+            return
+        res = UDS()
+        # provjeri je li podrzavamo bilo koji od identifikatora, ako ne vrati NR 0x31 requestOutOfRange
+        for identifier in msg.identifiers:
+            if identifier == 0x1337:
+                self.isotp.send(res / UDS_RDBIPR(dataIdentifier=0x1337) / self.DBI_VIN(vin="3VWFX7AT2DM604494"))
+
     def _handle_UDS_RMBA(self, msg: UDS):
+        if not self.ecu.sa_unlocked:
+            # SecurityAccessDenied
+            self._send_UDS_NR(msg, 0x33)
+
         # Address must be 32bit
-        if msg.memoryAddressLen != 4:
+        if msg.memoryAddressLen != 4 or msg.memorySizeLen != 1:
             self._send_UDS_NR(msg, 0x13)
             return
 
         size = _get_size_from_UDS_RMBA(msg)
         address = msg.memoryAddress4
         try:
-            self.isotp.send(UDS() / UDS_RMBAPR(dataRecord=self.ecu.get_data_from_memory(address, size)))
-        except IndexError:
+            data = self.ecu.get_data_from_memory(address, size)
+            if len(data) == 0:
+                self._send_UDS_NR(msg, 0x31)
+            else:
+                self.isotp.send(UDS() / UDS_RMBAPR(dataRecord=data))
+        except Exception:
             self._send_UDS_NR(msg, 0x31)
 
     def _handle_UDS_ER(self, msg):
@@ -67,3 +95,8 @@ class UDSHandlerImpl(UDSHandler):
 
     def _send_UDS_NR(self, msg, code):
         self.isotp.send(UDS() / UDS_NR(requestServiceId=msg.service, negativeResponseCode=code))
+
+    def _init_DBI_packets(self):
+        bind_layers(UDS_RDBIPR, self.DBI_VIN, dataIdentifier=0x1337)
+        bind_layers(UDS_WDBI, self.DBI_VIN, dataIdentifier=0x1337)
+        UDS_RDBI.dataIdentifiers[0x1337] = "VehicleIdentificationNumber"

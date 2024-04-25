@@ -7,9 +7,7 @@ class ECUModelImpl(ECUModel):
         with open("./impl/resources/ecu1_program.elf", "rb") as f:
             self.memory = f.read()
             self.memory_len = len(self.memory)
+            self.sa_unlocked = False
 
     def get_data_from_memory(self, address: int, size: int) -> bytes:
-        if address + size >= self.memory_len:
-            raise IndexError
-
         return self.memory[address:address + size]
