@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/26_04_2024.md",
+                "file": "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f69a22e7752d995e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "biljeske/19_04_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/26_04_2024.md",
+                "file": "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/26_04_2024.md",
+                "file": "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/26_04_2024.md"
+                "file": "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md"
               }
             }
           }
@@ -149,6 +160,18 @@
   },
   "active": "def59550dd8314d6",
   "lastOpenFiles": [
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/uds1_zadatak.zip",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/zadatak.md",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/rjesenje.md",
+    "biljeske/19_04_2024.md",
+    "biljeske/26_04_2024.md",
+    "biljeske/pdf/lovro_grguricmileusnic_26_04_2024.pdf",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/binary",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/kod/ecu/main.py~",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/setup.md.md",
+    "biljeske/12_04_2024.md",
+    "biljeske/05_04_2024.md",
     "biljeske/19_01_2024.md",
     "kod/dockercan/build/dockercan_remote",
     "kod/dockercan/cmd/dockercan_remote/dockercan_remote.go",
@@ -156,15 +179,9 @@
     "kod/dockercan/cmd/dockercan_remote",
     "kod/dockercan/build/dockercan",
     "kod/dockercan/build",
-    "kod/dockercan/deployments/example_compose_tcp/compose.yml",
-    "kod/dockercan/deployments/example_compose_tcp",
-    "kod/dockercan/plugin/rootfs/var/run/user/1000/systemd/transient/app-flatpak-com.discordapp.Discord-175233.scope",
-    "kod/dockercan/plugin/rootfs/var/run/systemd/journal/streams/8:614579",
-    "biljeske/26_04_2024.md",
     "biljeske/15_03_2024.md",
     "kod/dockercan/README.md",
     "biljeske/22_03_2024.md",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/README.md",
     "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
     "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
     "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/api.md",
@@ -178,13 +195,6 @@
     "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/CHANGELOG.md",
     "kod/zadaci/common/esp_projekt/README.md",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/api.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/README.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/CHANGELOG.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/README.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/UDS_RMBA_jednostavni_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
     "slike/RMBA_flow_example.png",
     "slike/UDS_RMBA_scapy.png",
     "slike/UDS_ERPR_scapy.png",
