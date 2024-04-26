@@ -161,6 +161,9 @@
   },
   "active": "f69a22e7752d995e",
   "lastOpenFiles": [
+    "kod/dockercan/build/dockercan_remote",
+    "kod/dockercan/build/dockercan",
+    "kod/dockercan/build",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/impl/uds_handler.py~",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/impl/ecu_model.py~",
     "biljeske/19_04_2024.md",
@@ -173,8 +176,6 @@
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/REQUESTED",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/RECORD",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/METADATA",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/INSTALLER",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/COPYING",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/zadatak.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/rjesenje.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/setup.md.md",
