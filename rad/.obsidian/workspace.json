@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/26_04_2024.md",
+                "file": "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/19_04_2024.md",
+                "file": "biljeske/26_04_2024.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,10 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "def59550dd8314d6",
+  "active": "f69a22e7752d995e",
   "lastOpenFiles": [
-    "slike/UDS_SA_REQ_DEF.png",
+    "biljeske/19_04_2024.md",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
     "biljeske/26_04_2024.md",
+    "slike/UDS_SA_REQ_DEF.png",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/impl/uds_handler.py~",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/impl/ecu_model.py~",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/main.py~",
@@ -172,10 +175,8 @@
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/METADATA",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/INSTALLER",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/COPYING",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/zadatak.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/rjesenje.md",
-    "biljeske/19_04_2024.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/setup.md.md",
     "biljeske/12_04_2024.md",
     "biljeske/05_04_2024.md",
