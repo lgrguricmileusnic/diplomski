@@ -30,11 +30,21 @@ class UDSHandlerImpl(UDSHandler):
                                 UDS_RDBI: self._handle_UDS_RDBI}
         # IDs discoverable by caringcaribou
         self.discoverable_service_ids = [0x10, 0x11, 0x22, 0x23]
+        self.dbi: dict = {self.DBI_VIN: 0x9,
+                          self.DBI_CTF_HINT: 0x21}
 
     class DBI_VIN(Packet):
-        name = "DataByIdentifier_IP_Packet"
+        # https://scapy.readthedocs.io/en/latest/layers/automotive.html#customization-of-uds-rdbi-uds-wdbi
+        name = "DataByIdentifier_VIN_Packet"
         fields_desc = [
             StrField('vin', b"", fmt="B")
+        ]
+
+    class DBI_CTF_HINT(Packet):
+        # https://scapy.readthedocs.io/en/latest/layers/automotive.html#customization-of-uds-rdbi-uds-wdbi
+        name = "DataByIdentifier_CTF_Hint_Packet"
+        fields_desc = [
+            StrField('hint', b"", fmt="B")
         ]
 
     def handle_msg(self, msg: UDS):
@@ -57,10 +67,19 @@ class UDSHandlerImpl(UDSHandler):
         if not isinstance(rdbi, UDS_RDBI):
             return
         res = UDS()
-        # provjeri je li podrzavamo bilo koji od identifikatora, ako ne vrati NR 0x31 requestOutOfRange
+        if len(set(self.dbi.values()).intersection(set(msg.identifiers))) <= 0:
+            self._send_UDS_NR(msg, 0x31)
         for identifier in msg.identifiers:
-            if identifier == 0x1337:
-                self.isotp.send(res / UDS_RDBIPR(dataIdentifier=0x1337) / self.DBI_VIN(vin="3VWFX7AT2DM604494"))
+            if identifier == self.dbi[self.DBI_VIN]:
+                self.isotp.send(res /
+                                UDS_RDBIPR(dataIdentifier=self.dbi[self.DBI_VIN]) /
+                                self.DBI_VIN(vin=self.ecu.vin)
+                                )
+            elif identifier == self.dbi[self.DBI_CTF_HINT]:
+                self.isotp.send(res /
+                                UDS_RDBIPR(dataIdentifier=self.dbi[self.DBI_CTF_HINT]) /
+                                self.DBI_CTF_HINT(hint="SHA-512")
+                                )
 
     def _handle_UDS_RMBA(self, msg: UDS):
         if not self.ecu.sa_unlocked:
@@ -97,6 +116,7 @@ class UDSHandlerImpl(UDSHandler):
         self.isotp.send(UDS() / UDS_NR(requestServiceId=msg.service, negativeResponseCode=code))
 
     def _init_DBI_packets(self):
-        bind_layers(UDS_RDBIPR, self.DBI_VIN, dataIdentifier=0x1337)
-        bind_layers(UDS_WDBI, self.DBI_VIN, dataIdentifier=0x1337)
-        UDS_RDBI.dataIdentifiers[0x1337] = "VehicleIdentificationNumber"
+        for pkt_cls, identifier in self.dbi.items():
+            bind_layers(UDS_RDBIPR, pkt_cls, dataIdentifier=identifier)
+            bind_layers(UDS_WDBI, pkt_cls, dataIdentifier=identifier)
+            UDS_RDBI.dataIdentifiers[identifier] = pkt_cls.name[:-7]  # strip _Packet

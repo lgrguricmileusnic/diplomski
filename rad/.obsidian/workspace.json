@@ -160,9 +160,11 @@
   },
   "active": "def59550dd8314d6",
   "lastOpenFiles": [
+    "slike/UDS_SA_REQ_DEF.png",
+    "biljeske/26_04_2024.md",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/impl/uds_handler.py~",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/main.py~",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/impl/ecu_model.py~",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/main.py~",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/top_level.txt",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/WHEEL",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/REQUESTED",
@@ -170,12 +172,10 @@
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/METADATA",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/INSTALLER",
     "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info/COPYING",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/venv/lib/python3.11/site-packages/msgpack-1.0.8.dist-info",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/zadatak.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/rjesenje.md",
     "biljeske/19_04_2024.md",
-    "biljeske/26_04_2024.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/setup.md.md",
     "biljeske/12_04_2024.md",
     "biljeske/05_04_2024.md",
@@ -204,7 +204,6 @@
     "slike/simple_polling_uds.png",
     "slike/docker_compose_dockercan_test.png",
     "slike/isotp_frames.png",
-    "slike/uds_kb_standards.png",
-    "slike/isotp_slow.png"
+    "slike/uds_kb_standards.png"
   ]
 }
