@@ -3,6 +3,9 @@ from scapy.contrib.automotive.uds import *
 from ecu_template.handler.uds.uds_handler import UDSHandler
 from impl.ecu_model import ECUModelImpl
 
+import hashlib
+import os
+
 
 def _get_size_from_UDS_RMBA(msg: UDS_RMBA):
     match msg.memorySizeLen:
@@ -27,11 +30,14 @@ class UDSHandlerImpl(UDSHandler):
         self.callbacks: dict = {UDS_RMBA: self._handle_UDS_RMBA,
                                 UDS_ER: self._handle_UDS_ER,
                                 UDS_DSC: self._handle_UDS_DSC,
-                                UDS_RDBI: self._handle_UDS_RDBI}
+                                UDS_RDBI: self._handle_UDS_RDBI,
+                                UDS_SA: self._handle_UDS_SA}
         # IDs discoverable by caringcaribou
         self.discoverable_service_ids = [0x10, 0x11, 0x22, 0x23]
         self.dbi: dict = {self.DBI_VIN: 0x9,
                           self.DBI_CTF_HINT: 0x21}
+        self.sa_requests: dict = {}
+        self.sa_unlocked = False
 
     class DBI_VIN(Packet):
         # https://scapy.readthedocs.io/en/latest/layers/automotive.html#customization-of-uds-rdbi-uds-wdbi
@@ -59,13 +65,33 @@ class UDSHandlerImpl(UDSHandler):
         else:
             self._send_UDS_NR(msg, 0x11)
 
-    def _handle_UDS_SA(self):
-        pass
+    def _handle_UDS_SA(self, msg: UDS):
+        if msg.securityAccessType % 2 == 1:
+            # requestSeed
+            seed = os.urandom(16)
+            hf = hashlib.sha512()
+            hf.update(seed)
+            key = hf.digest()
+            self.sa_requests[msg.securityAccessType] = (seed, key)
+            self.isotp.send(UDS() / UDS_SAPR(securityAccessType=msg.securityAccessType, securitySeed=seed))
+        else:
+            # sendKey
+            request_seed_access_type = (msg.securityAccessType - 1)
+            if request_seed_access_type not in self.sa_requests.keys():
+                print("UDS SA request sequence")
+                self._send_UDS_NR(msg, 0x24)  # 0x24 requestSequenceError
+                return
+
+            client_key = msg.securityKey
+            if client_key != self.sa_requests[request_seed_access_type][1]:
+                print("UDS SA invalid key!")
+                self._send_UDS_NR(msg, 0x35)  # 0x35 invalidKeyError
+            self.sa_unlocked = True
+            self.sa_requests.pop(request_seed_access_type)
+            print("Unlocked!")
+            self.isotp.send(UDS() / UDS_SAPR(securityAccessType=msg.securityAccessType))
 
     def _handle_UDS_RDBI(self, msg: UDS):
-        rdbi = msg.payload
-        if not isinstance(rdbi, UDS_RDBI):
-            return
         res = UDS()
         if len(set(self.dbi.values()).intersection(set(msg.identifiers))) <= 0:
             self._send_UDS_NR(msg, 0x31)
@@ -82,7 +108,7 @@ class UDSHandlerImpl(UDSHandler):
                                 )
 
     def _handle_UDS_RMBA(self, msg: UDS):
-        if not self.ecu.sa_unlocked:
+        if not self.sa_unlocked:
             # SecurityAccessDenied
             self._send_UDS_NR(msg, 0x33)
 
