@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
+                "file": "biljeske/03_05_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "capab",
+                "query": "load_con",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/26_04_2024.md",
+                "file": "biljeske/03_05_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/26_04_2024.md",
+                "file": "biljeske/03_05_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/26_04_2024.md"
+                "file": "biljeske/03_05_2024.md"
               }
             }
           }
@@ -159,25 +158,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f69a22e7752d995e",
+  "active": "def59550dd8314d6",
   "lastOpenFiles": [
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/main.py~",
+    "slike/sha-512_uds_task_2.png",
+    "biljeske/03_05_2024.md",
+    "biljeske/26_04_2024.md",
+    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/kod/ecu/impl/uds_handler.py~",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/zadatak.md",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/test/zadatak.md",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/test/postavljanje.md",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/test",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/uds_ctf_task1_solution.zip",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/uds_ctf_task1.zip",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/rjesenje.md",
     "kod/dockercan/plugin/config.json",
     "kod/dockercan/plugin/rootfs/var",
     "kod/dockercan/plugin/rootfs/usr",
     "kod/dockercan/plugin/rootfs/tmp",
     "kod/dockercan/plugin/rootfs/sys",
     "kod/dockercan/plugin/rootfs/srv",
-    "kod/dockercan/plugin/rootfs/sbin",
-    "kod/dockercan/plugin/rootfs/run/docker/plugins",
-    "kod/dockercan/plugin/rootfs/run/docker",
-    "kod/dockercan/plugin/rootfs/run",
-    "kod/dockercan/plugin/rootfs/root",
     "biljeske/19_04_2024.md",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
-    "biljeske/26_04_2024.md",
     "slike/UDS_SA_REQ_DEF.png",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/zadatak.md",
-    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/rjesenje.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/setup.md.md",
     "biljeske/12_04_2024.md",
     "biljeske/05_04_2024.md",
@@ -195,9 +198,6 @@
     "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
     "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/api.md",
     "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/README.md",
-    "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/CHANGELOG.md",
-    "kod/zadaci/common/esp_projekt/README.md",
-    "kod/zadaci/UDS_VIN_DID_SA_RMBA_zadatak/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
     "slike/RMBA_flow_example.png",
     "slike/UDS_RMBA_scapy.png",
     "slike/UDS_ERPR_scapy.png",
@@ -205,7 +205,6 @@
     "slike/uds_messages.png",
     "slike/simple_polling_uds.png",
     "slike/docker_compose_dockercan_test.png",
-    "slike/isotp_frames.png",
-    "slike/uds_kb_standards.png"
+    "slike/isotp_frames.png"
   ]
 }
