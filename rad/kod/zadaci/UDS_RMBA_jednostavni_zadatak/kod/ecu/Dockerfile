@@ -15,6 +15,5 @@ RUN python3 -m venv venv
 
 RUN venv/bin/pip3 install -r requirements.txt
 
-
-
+RUN rm /bin/sh
 ENTRYPOINT ["venv/bin/python3", "main.py"]

@@ -33,7 +33,7 @@ class UDSHandlerImpl(UDSHandler):
                                 UDS_RDBI: self._handle_UDS_RDBI,
                                 UDS_SA: self._handle_UDS_SA}
         # IDs discoverable by caringcaribou
-        self.discoverable_service_ids = [0x10, 0x11, 0x22, 0x23]
+        self.discoverable_service_ids = [0x10, 0x11, 0x22, 0x23, 0x27]
         self.dbi: dict = {self.DBI_VIN: 0x9,
                           self.DBI_CTF_HINT: 0x21}
         self.sa_requests: dict = {}

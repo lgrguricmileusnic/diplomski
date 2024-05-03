@@ -5,5 +5,5 @@
 ## Opis zadatka
 Zastavica je skrivena u memoriji ECU-a s 32 bitnim procesorom. 
 Komunikacija s ECU-om moguća je putem virtualnog CAN mrežnog sučelja "dcan0".
-Hint: Pomoć će vam Scapy i caribou.
+Hint: Scapy i caringcaribou
 
