@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/03_05_2024.md",
+                "file": "biljeske/10_05_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/03_05_2024.md",
+                "file": "biljeske/10_05_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/03_05_2024.md",
+                "file": "biljeske/10_05_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/03_05_2024.md"
+                "file": "biljeske/10_05_2024.md"
               }
             }
           }
@@ -148,7 +148,10 @@
   },
   "active": "f69a22e7752d995e",
   "lastOpenFiles": [
+    "kod/ecu-template/ecu_template/ecu.py~",
     "kod/ecu-template/impl/xcp_handler.py~",
+    "biljeske/03_05_2024.md",
+    "biljeske/10_05_2024.md",
     "kod/ecu-template/ecu_template/handler/xcp/xcp_handler.py~",
     "kod/ecu-template/impl/xcp_handler.py",
     "kod/ecu-template/ecu_template/controller/xcp/xcp_controller.py~",
@@ -162,10 +165,8 @@
     "biljeske/26_04_2024.md",
     "slike/xcp1.png",
     "slike/xcp3.png",
-    "biljeske/03_05_2024.md",
     "slike/xcp4.png",
     "slike/ccp_seed_n_key.png",
-    "kod/ecu-template/ecu_template/notifier/xcp/xcp_notifier.py",
     "slike/sha-512_uds_task_2.png",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/zadatak.md",
@@ -190,7 +191,6 @@
     "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
     "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812/README.md",
     "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/api.md",
-    "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/README.md",
     "slike/RMBA_flow_example.png",
     "slike/UDS_RMBA_scapy.png",
     "slike/UDS_ERPR_scapy.png"
