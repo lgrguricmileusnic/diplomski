@@ -11,13 +11,38 @@
             "id": "f69a22e7752d995e",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "biljeske/10_05_2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "372ebdf408878208",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "biljeske/17_05_2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "70dbc4fa4ff1d937",
+            "type": "leaf",
+            "state": {
               "type": "image",
               "state": {
-                "file": "slike/xcp_bug_jetbrains.png"
+                "file": "slike/xcp_req_res_diff.png"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "slike/xcp_bug_jetbrains.png",
+                "file": "biljeske/17_05_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "slike/xcp_bug_jetbrains.png",
+                "file": "biljeske/17_05_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "slike/xcp_bug_jetbrains.png"
+                "file": "biljeske/17_05_2024.md"
               }
             }
           }
@@ -144,38 +169,41 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f69a22e7752d995e",
+  "active": "372ebdf408878208",
   "lastOpenFiles": [
+    "kod/ecu-template/ecu_template/model/listener/__pycache__/listener.cpython-311.pyc",
+    "kod/ecu-template/ecu_template/model/listener/__pycache__/ecu_model_listener.cpython-311.pyc",
+    "kod/ecu-template/ecu_template/model/listener/listener.py",
+    "kod/ecu-template/ecu_template/model/listener/ecu_model_listener.py",
+    "kod/ecu-template/ecu_template/model/listener/__pycache__",
+    "kod/ecu-template/ecu_template/model/listener",
+    "kod/ecu-template/ecu_template/controller/listener/xcp/__pycache__/xcp_listener.cpython-311.pyc",
+    "kod/ecu-template/ecu_template/controller/listener/uds/__pycache__/uds_listener.cpython-311.pyc",
+    "kod/ecu-template/ecu_template/controller/listener/can/__pycache__/can_listener.cpython-311.pyc",
+    "kod/ecu-template/ecu_template/controller/listener/xcp/xcp_listener.py",
+    "kod/ecu-template/ecu_template/controller/listener/xcp/__pycache__",
+    "slike/ECU WEB.png",
+    "slike/ECU WEB.excalidraw.svg",
+    "slike/ECU AGL IC.png",
+    "slike/ECU AGL IC.excalidraw.svg",
+    "slike/ECU GUI.png",
+    "slike/ECU GUI.excalidraw.svg",
     "biljeske/10_05_2024.md",
-    "kod/ecu-template/ecu_template/ecu.py~",
-    "kod/zadaci/XCP_zadatak/kod/ecu/ecu_template/ecu.py~",
-    "kod/zadaci/XCP_zadatak/kod/ecu/impl/config.py~",
-    "kod/zadaci/XCP_zadatak/kod/ecu/ecu_template/handler/xcp/__pycache__/xcp_handler.cpython-311.pyc.137976383182736",
-    "kod/zadaci/XCP_zadatak/kod/ecu/impl/xcp_handler.py~",
-    "slike/xcp_bug_jetbrains.png",
-    "kod/ecu-template/impl/xcp_handler.py~",
-    "kod/ecu-template/ecu_template/handler/xcp/xcp_handler.py~",
-    "kod/zadaci/XCP_zadatak/kod/ecu/ecu_template/handler/xcp/xcp_handler.py~",
+    "biljeske/17_05_2024.md",
     "biljeske/03_05_2024.md",
+    "slike/xcp_req_res_diff.png",
+    "slike/xcp_bug_jetbrains.png",
     "biljeske/26_04_2024.md",
     "slike/daq_xcp.png",
-    "kod/zadaci/XCP_zadatak/kod/ecu/Dockerfile",
-    "kod/zadaci/XCP_zadatak/kod/ecu/impl/__pycache__/xcp_handler.cpython-311.pyc",
     "kod/zadaci/XCP_zadatak/kod/ecu/venv/lib/python3.11/site-packages/black-24.4.0.dist-info/licenses/AUTHORS.md",
     "kod/zadaci/XCP_zadatak/kod/ecu-template/venv/lib/python3.11/site-packages/black-24.4.0.dist-info/licenses/AUTHORS.md",
     "slike/xcp2.png",
-    "slike/xcp1.png",
-    "slike/xcp3.png",
-    "slike/xcp4.png",
-    "slike/ccp_seed_n_key.png",
-    "slike/sha-512_uds_task_2.png",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/zadatak.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/test/zadatak.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/test/postavljanje.md",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/rjesenje.md",
     "biljeske/19_04_2024.md",
-    "slike/UDS_SA_REQ_DEF.png",
     "kod/zadaci/UDS_RMBA_jednostavni_zadatak/setup.md.md",
     "biljeske/12_04_2024.md",
     "biljeske/05_04_2024.md",
@@ -188,8 +216,6 @@
     "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/api.md",
     "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/README.md",
     "kod/zadaci/common/ecu_binary/managed_components/espressif__led_strip/CHANGELOG.md",
-    "kod/zadaci/common/ecu_binary/README.md",
-    "kod/zadaci/common/esp_projekt/managed_components/espressif__led_strip/examples/led_strip_spi_ws2812/README.md",
-    "slike/RMBA_flow_example.png"
+    "kod/zadaci/common/ecu_binary/README.md"
   ]
 }

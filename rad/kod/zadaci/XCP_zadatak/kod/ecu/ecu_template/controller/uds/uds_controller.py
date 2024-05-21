@@ -1,8 +1,8 @@
 from scapy.contrib.automotive.uds import UDS
 
 from ecu_template.controller.controller import Controller
+from ecu_template.controller.listener.uds.uds_listener import UDSListener
 from ecu_template.handler.uds.uds_handler import UDSHandler
-from ecu_template.listener.uds.uds_listener import UDSListener
 from ecu_template.notifier.uds.uds_notifier import UDSNotifier
 
 

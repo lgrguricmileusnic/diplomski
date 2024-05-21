@@ -9,6 +9,4 @@ class CanHandlerImpl(CanHandler):
         super().__init__(ecu)
 
     def handle_msg(self, msg: CAN):
-        print(msg.identifier)
-        msg.identifier += 1
-        self.socket.send(msg)
+        pass

@@ -8,6 +8,16 @@ from impl.uds_handler import UDSHandlerImpl
 from impl.xcp_handler import XCPHandlerImpl
 
 
+def setup_model():
+    ecu_model = ECUModelImpl()
+    # Additional model setup start
+
+    # ...
+
+    # Additional model setup end
+    return ecu_model
+
+
 def loop(_ecu: ECU):
     _ecu.start()
     try:
@@ -24,7 +34,8 @@ def main():
     argparser.add_argument("canfd", default=False, type=bool, nargs="?")
     args = argparser.parse_args()
 
-    ecu_model = ECUModelImpl()
+    ecu_model = setup_model()
+
     ecu = ECU(
         interface=args.interface,
         canfd=args.canfd,

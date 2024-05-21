@@ -2,7 +2,7 @@ import threading
 
 from scapy.contrib.cansocket_native import NativeCANSocket
 
-from ecu_template.listener.can.can_listener import CanListener
+from ecu_template.controller.listener.can.can_listener import CanListener
 from ..notifier import Notifier
 
 THREAD_NAME = "CANNotifier"

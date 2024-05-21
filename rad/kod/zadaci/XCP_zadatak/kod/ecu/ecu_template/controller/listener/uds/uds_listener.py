@@ -2,7 +2,7 @@ from abc import abstractmethod
 
 from scapy.contrib.automotive.uds import UDS
 
-from ecu_template.listener.listener import PacketListener
+from ecu_template.controller.listener.listener import PacketListener
 
 
 class UDSListener(PacketListener):

@@ -1,6 +1,6 @@
 from ecu_template.controller.controller import Controller
+from ecu_template.controller.listener.xcp.xcp_listener import XCPListener
 from ecu_template.handler.xcp.xcp_handler import XCPHandler
-from ecu_template.listener.xcp.xcp_listener import XCPListener
 from ecu_template.notifier.xcp.xcp_notifier import XCPNotifier
 
 

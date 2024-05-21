@@ -2,7 +2,7 @@ from abc import abstractmethod
 
 from scapy.layers.can import CAN
 
-from ecu_template.listener.listener import PacketListener
+from ecu_template.controller.listener.listener import PacketListener
 
 
 class CanListener(PacketListener):

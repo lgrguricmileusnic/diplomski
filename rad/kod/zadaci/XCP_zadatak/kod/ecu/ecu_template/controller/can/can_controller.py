@@ -1,8 +1,8 @@
 from scapy.layers.can import CAN
 
 from ecu_template.controller.controller import Controller
+from ecu_template.controller.listener.can.can_listener import CanListener
 from ecu_template.handler.can.can_handler import CanHandler
-from ecu_template.listener.can.can_listener import CanListener
 from ecu_template.notifier.can.can_notifier import CanNotifier
 
 

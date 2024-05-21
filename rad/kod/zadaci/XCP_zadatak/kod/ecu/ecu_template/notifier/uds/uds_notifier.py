@@ -3,7 +3,7 @@ import threading
 from scapy.contrib.automotive.uds import UDS
 from scapy.contrib.isotp.isotp_native_socket import ISOTPNativeSocket
 
-from ecu_template.listener.uds.uds_listener import UDSListener
+from ecu_template.controller.listener.uds.uds_listener import UDSListener
 from ecu_template.notifier.notifier import Notifier
 
 THREAD_NAME = "UDSnotifier"
