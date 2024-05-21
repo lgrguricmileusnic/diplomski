@@ -7,3 +7,6 @@
 [submodule "rad/kod/ecu-template"]
 	path = rad/kod/ecu-template
 	url = https://github.com/lgrguricmileusnic/ecu-template.git
+[submodule "rad/kod/agl-ic-compose/kuksa.val"]
+	path = rad/kod/agl-ic-compose/kuksa.val
+	url = https://github.com/eclipse/kuksa.val.git
