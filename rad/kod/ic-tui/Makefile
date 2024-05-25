@@ -6,7 +6,6 @@ PROG=ic-tui
 
 build: ic-tui
 
-
 ic-tui:
 	go build -o ${BUILD_DIR}${PROG} ${SRC_DIR}
 

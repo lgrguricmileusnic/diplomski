@@ -5,12 +5,20 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"strings"
 
+	"github.com/charmbracelet/bubbles/progress"
 	tea "github.com/charmbracelet/bubbletea"
+	"github.com/charmbracelet/lipgloss"
+)
+
+const (
+	padding  = 2
+	maxWidth = 80
 )
 
 type responseMsg struct {
-	Speed    float32
+	Speed    float64
 	Blinkers bool
 }
 
@@ -28,7 +36,6 @@ func listenForActivity(sub chan responseMsg) tea.Cmd {
 					http.Error(w, err.Error(), http.StatusBadRequest)
 					return
 				}
-
 				sub <- msg
 			})
 			http.ListenAndServe(":8080", mux)
@@ -36,7 +43,6 @@ func listenForActivity(sub chan responseMsg) tea.Cmd {
 	}
 }
 
-// A command that waits for the activity on a channel.
 func waitForActivity(sub chan responseMsg) tea.Cmd {
 	return func() tea.Msg {
 		return responseMsg(<-sub)
@@ -45,9 +51,10 @@ func waitForActivity(sub chan responseMsg) tea.Cmd {
 
 type model struct {
 	sub      chan responseMsg
-	speed    float32
+	speed    float64
 	blinkers bool
 	quitting bool
+	progress progress.Model
 }
 
 func (m model) Init() tea.Cmd {
@@ -62,28 +69,47 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.KeyMsg:
 		m.quitting = true
 		return m, tea.Quit
+
+	case tea.WindowSizeMsg:
+		m.progress.Width = msg.Width - padding*2 - 4
+		if m.progress.Width > maxWidth {
+			m.progress.Width = maxWidth
+		}
+		return m, nil
+
 	case responseMsg:
 		m.speed = msg.Speed
 		m.blinkers = msg.Blinkers
+		return m, waitForActivity(m.sub)
 
-		return m, waitForActivity(m.sub) // wait for next event
+	case progress.FrameMsg:
+		progressModel, cmd := m.progress.Update(msg)
+		m.progress = progressModel.(progress.Model)
+		return m, cmd
+
 	default:
 		return m, nil
 	}
 }
 
 func (m model) View() string {
-	s := fmt.Sprintf("\n Current speed: %f Blinkers: %t\n\n Press any key to exit\n", m.speed, m.blinkers)
-	if m.quitting {
-		s += "\n"
-	}
-	return s
+	// s := fmt.Sprintf("\n Current speed: %f Blinkers: %t\n\n Press any key to exit\n", m.speed, m.blinkers)
+	pad := strings.Repeat(" ", padding)
+	return "\n" +
+		pad + m.progress.ViewAs(m.speed) + "\n\n" +
+		pad + "Press any key to quit"
 }
 
 func main() {
+	pm := progress.New(progress.WithSolidFill("#FF2800"))
+	pm.PercentageStyle.AlignVertical(lipgloss.Center)
+	pm.PercentFormat = "%f km/h"
 	p := tea.NewProgram(model{
-		sub: make(chan responseMsg),
-	})
+		sub:      make(chan responseMsg),
+		blinkers: false,
+		speed:    0.0,
+		progress: pm},
+		tea.WithAltScreen())
 
 	if _, err := p.Run(); err != nil {
 		fmt.Println("could not start program:", err)
