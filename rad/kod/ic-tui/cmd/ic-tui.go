@@ -10,8 +10,8 @@ import (
 	"github.com/charmbracelet/lipgloss"
 
 	"github.com/charmbracelet/bubbles/progress"
-	"github.com/lgrguricmileusnic/ic-tui/internal/bubbles/blinkers"
 	"github.com/lgrguricmileusnic/ic-tui/internal/styles"
+	"github.com/lgrguricmileusnic/ic-tui/pkg/bubbles/blinkers"
 )
 
 const (
@@ -106,15 +106,18 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		bcmd := m.blinkers.SetBlinking(msg.blinkers)
 		return m, tea.Batch(waitForActivity(m.sub), scmd, bcmd)
 
+		// win condition msg
 	case WinMsg:
 		m.displayFlag = true
-		return m, nil
+		return m, tea.Quit
 
+		// progress messages
 	case progress.FrameMsg:
 		progressModel, cmd := m.speedbar.Update(msg)
 		m.speedbar = progressModel.(progress.Model)
 		return m, cmd
 
+		// blinkers messages
 	case blinkers.TickMsg:
 		var cmd tea.Cmd
 		m.blinkers, cmd = m.blinkers.Update(msg)
