@@ -5,60 +5,82 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	"strings"
+
+	tea "github.com/charmbracelet/bubbletea"
+	"github.com/charmbracelet/lipgloss"
 
 	"github.com/charmbracelet/bubbles/progress"
-	tea "github.com/charmbracelet/bubbletea"
+	"github.com/lgrguricmileusnic/ic-tui/internal/bubbles/blinkers"
+	"github.com/lgrguricmileusnic/ic-tui/internal/styles"
 )
 
 const (
 	padding  = 2
 	maxWidth = 80
-	maxSpeed = 100.00
+	maxSpeed = 250.00
 )
 
+type updatePostData struct {
+	Speed        float64
+	Blinkers     bool
+	WinCondition bool
+}
 type responseMsg struct {
-	Speed    float64
-	Blinkers bool
+	speed    float64
+	blinkers bool
 }
 
-func listenForActivity(sub chan responseMsg) tea.Cmd {
+type WinMsg struct{}
+
+func listenForActivity(sub chan updatePostData) tea.Cmd {
 	return func() tea.Msg {
 		for {
 			mux := http.NewServeMux()
 			mux.HandleFunc("POST /update", func(w http.ResponseWriter, r *http.Request) {
 
-				var msg responseMsg
+				var data updatePostData
 
-				err := json.NewDecoder(r.Body).Decode(&msg)
+				err := json.NewDecoder(r.Body).Decode(&data)
 
 				if err != nil {
 					http.Error(w, err.Error(), http.StatusBadRequest)
 					return
 				}
-				sub <- msg
+				sub <- data
 			})
 			http.ListenAndServe(":8080", mux)
 		}
 	}
 }
 
-func waitForActivity(sub chan responseMsg) tea.Cmd {
+func waitForActivity(sub chan updatePostData) tea.Cmd {
 	return func() tea.Msg {
-		return responseMsg(<-sub)
+		data := updatePostData(<-sub)
+
+		if data.WinCondition {
+			return WinMsg{}
+		}
+
+		return responseMsg{data.Speed, data.Blinkers}
 	}
 }
 
+type Window struct {
+	width  int
+	heigth int
+}
 type model struct {
-	sub      chan responseMsg
-	speed    float64
-	blinkers bool
-	quitting bool
-	progress progress.Model
+	sub         chan updatePostData
+	blinkers    blinkers.Model
+	displayFlag bool
+	speedbar    progress.Model
+	speed       float64
+	window      Window
 }
 
 func (m model) Init() tea.Cmd {
 	return tea.Batch(
+		m.blinkers.Init(),
 		listenForActivity(m.sub),
 		waitForActivity(m.sub),
 	)
@@ -67,25 +89,40 @@ func (m model) Init() tea.Cmd {
 func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 	case tea.KeyMsg:
-		m.quitting = true
 		return m, tea.Quit
 
 	case tea.WindowSizeMsg:
-		m.progress.Width = msg.Width - padding*2 - 4
-		if m.progress.Width > maxWidth {
-			m.progress.Width = maxWidth
+		m.speedbar.Width = msg.Width - padding*2 - 4
+		if m.speedbar.Width > maxWidth {
+			m.speedbar.Width = maxWidth
 		}
+		m.window.heigth = msg.Height
+		m.window.width = msg.Width
 		return m, nil
 
 	case responseMsg:
-		m.speed = msg.Speed
-		m.blinkers = msg.Blinkers
-		cmd := m.progress.SetPercent(msg.Speed / maxSpeed)
-		return m, tea.Batch(waitForActivity(m.sub), cmd)
+		m.speed = msg.speed
+		scmd := m.speedbar.SetPercent(msg.speed / maxSpeed)
+		bcmd := m.blinkers.SetBlinking(msg.blinkers)
+		return m, tea.Batch(waitForActivity(m.sub), scmd, bcmd)
+
+	case WinMsg:
+		m.displayFlag = true
+		return m, nil
 
 	case progress.FrameMsg:
-		progressModel, cmd := m.progress.Update(msg)
-		m.progress = progressModel.(progress.Model)
+		progressModel, cmd := m.speedbar.Update(msg)
+		m.speedbar = progressModel.(progress.Model)
+		return m, cmd
+
+	case blinkers.TickMsg:
+		var cmd tea.Cmd
+		m.blinkers, cmd = m.blinkers.Update(msg)
+		return m, cmd
+
+	case blinkers.OnOffMsg:
+		var cmd tea.Cmd
+		m.blinkers, cmd = m.blinkers.Update(msg)
 		return m, cmd
 
 	default:
@@ -94,21 +131,30 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (m model) View() string {
-	pad := strings.Repeat(" ", padding)
-	return "\n" +
-		pad + m.progress.View() + "\n\n" +
-		pad + "Press any key to quit"
+
+	sm := m.speedbar.View()
+	ic := styles.IcStyle.Render(lipgloss.JoinVertical(lipgloss.Center,
+		m.blinkers.View(),
+		"\n",
+		sm,
+		fmt.Sprintf("%.f km/h", m.speed)))
+	s := ic
+	return lipgloss.Place(m.window.width, m.window.heigth, lipgloss.Center, lipgloss.Center, s)
 }
 
 func main() {
+	// Progress model init
 	pm := progress.New(progress.WithSolidFill("#FF2800"))
-	pm.PercentFormat = "\t%f km/h"
+	pm.ShowPercentage = false
+
+	// Blinkers model init
+
+	bm := blinkers.New()
 
 	p := tea.NewProgram(model{
-		sub:      make(chan responseMsg),
-		blinkers: false,
-		speed:    0.0,
-		progress: pm},
+		sub:      make(chan updatePostData),
+		blinkers: bm,
+		speedbar: pm},
 		tea.WithAltScreen())
 
 	if _, err := p.Run(); err != nil {
