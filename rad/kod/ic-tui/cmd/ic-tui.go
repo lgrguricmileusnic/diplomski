@@ -9,12 +9,12 @@ import (
 
 	"github.com/charmbracelet/bubbles/progress"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/charmbracelet/lipgloss"
 )
 
 const (
 	padding  = 2
 	maxWidth = 80
+	maxSpeed = 100.00
 )
 
 type responseMsg struct {
@@ -80,7 +80,8 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case responseMsg:
 		m.speed = msg.Speed
 		m.blinkers = msg.Blinkers
-		return m, waitForActivity(m.sub)
+		cmd := m.progress.SetPercent(msg.Speed / maxSpeed)
+		return m, tea.Batch(waitForActivity(m.sub), cmd)
 
 	case progress.FrameMsg:
 		progressModel, cmd := m.progress.Update(msg)
@@ -93,17 +94,16 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (m model) View() string {
-	// s := fmt.Sprintf("\n Current speed: %f Blinkers: %t\n\n Press any key to exit\n", m.speed, m.blinkers)
 	pad := strings.Repeat(" ", padding)
 	return "\n" +
-		pad + m.progress.ViewAs(m.speed) + "\n\n" +
+		pad + m.progress.View() + "\n\n" +
 		pad + "Press any key to quit"
 }
 
 func main() {
 	pm := progress.New(progress.WithSolidFill("#FF2800"))
-	pm.PercentageStyle.AlignVertical(lipgloss.Center)
-	pm.PercentFormat = "%f km/h"
+	pm.PercentFormat = "\t%f km/h"
+
 	p := tea.NewProgram(model{
 		sub:      make(chan responseMsg),
 		blinkers: false,
