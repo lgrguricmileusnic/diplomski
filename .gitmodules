@@ -10,3 +10,6 @@
 [submodule "rad/kod/agl-ic-compose/kuksa.val"]
 	path = rad/kod/agl-ic-compose/kuksa.val
 	url = https://github.com/eclipse/kuksa.val.git
+[submodule "rad/kod/ic-tui"]
+	path = rad/kod/ic-tui
+	url = https://github.com/lgrguricmileusnic/ic-tui.git
