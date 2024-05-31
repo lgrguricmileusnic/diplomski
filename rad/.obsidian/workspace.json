@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "56e982fd79561b53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "biljeske/31_05_2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "70dbc4fa4ff1d937",
             "type": "leaf",
             "state": {
@@ -42,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/24_05_2024.md",
+                "file": "biljeske/31_05_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/24_05_2024.md",
+                "file": "biljeske/31_05_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/24_05_2024.md"
+                "file": "biljeske/31_05_2024.md"
               }
             }
           }
@@ -169,8 +181,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "372ebdf408878208",
+  "active": "56e982fd79561b53",
   "lastOpenFiles": [
+    "biljeske/24_05_2024.md",
+    "biljeske/31_05_2024.md",
+    "biljeske/pdf/lovro_grguricmileusnic_24_05_2024.pdf",
     "Pasted image 20240525000847.png",
     "kod/ic-tui/go.sum",
     "kod/ic-tui/Makefile",
@@ -181,9 +196,7 @@
     "kod/ic-tui/go.mod",
     "kod/ic-tui",
     "slike/gtk-error-agl-ic.png",
-    "biljeske/24_05_2024.md",
     "kod/agl-ic-compose/super-admin.json.token",
-    "kod/agl-ic-compose/kuksa_client_files/super-admin.json.token",
     "biljeske/10_05_2024.md",
     "biljeske/17_05_2024.md",
     "kod/agl-ic-compose/gui/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
@@ -194,7 +207,6 @@
     "kod/agl-ic-compose/gui/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png",
     "kod/agl-ic-compose/gui/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png",
     "kod/agl-ic-compose/gui/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png",
-    "kod/agl-ic-compose/gui/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png",
     "kod/agl-ic-compose/gui/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
     "kod/agl-ic-compose/gui/README.md",
     "kod/agl-ic-compose/gui/LICENSE.md",
