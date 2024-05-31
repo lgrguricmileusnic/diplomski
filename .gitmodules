@@ -13,3 +13,6 @@
 [submodule "rad/kod/ic-tui"]
 	path = rad/kod/ic-tui
 	url = https://github.com/lgrguricmileusnic/ic-tui.git
+[submodule "rad/kod/docKar"]
+	path = rad/kod/docKar
+	url = git@github.com:lgrguricmileusnic/docKar.git
