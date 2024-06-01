@@ -3,19 +3,9 @@ import argparse
 import impl.config as config
 from ecu_template.ecu import ECU
 from impl.can_handler import CanHandlerImpl
-from impl.ecu_model import ECUModelImpl
+from impl.ecu_model import setup_ecu_model
 from impl.uds_handler import UDSHandlerImpl
 from impl.xcp_handler import XCPHandlerImpl
-
-
-def setup_model():
-    ecu_model = ECUModelImpl()
-    # Additional model setup start
-
-    # ...
-
-    # Additional model setup end
-    return ecu_model
 
 
 def loop(_ecu: ECU):
@@ -34,7 +24,7 @@ def main():
     argparser.add_argument("canfd", default=False, type=bool, nargs="?")
     args = argparser.parse_args()
 
-    ecu_model = setup_model()
+    ecu_model = setup_ecu_model()
 
     ecu = ECU(
         interface=args.interface,
