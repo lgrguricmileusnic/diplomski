@@ -30,7 +30,7 @@ def loop(_ecu: ECU):
 
 def main():
     argparser = argparse.ArgumentParser()
-    argparser.add_argument("interface", default="vcan0", type=str, nargs="?")
+    argparser.add_argument("interface", default="ccan_0", type=str, nargs="?")
     argparser.add_argument("canfd", default=False, type=bool, nargs="?")
     args = argparser.parse_args()
 

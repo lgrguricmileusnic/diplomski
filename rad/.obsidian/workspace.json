@@ -4,57 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "d0cabdb554214b95",
+        "id": "744679edc472a808",
         "type": "tabs",
         "children": [
           {
-            "id": "f69a22e7752d995e",
+            "id": "c23a11927024253a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "biljeske/10_05_2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "372ebdf408878208",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "biljeske/24_05_2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "56e982fd79561b53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "biljeske/31_05_2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "70dbc4fa4ff1d937",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "slike/xcp_req_res_diff.png"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "load_con",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -120,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/31_05_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/31_05_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "biljeske/31_05_2024.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -181,34 +138,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "56e982fd79561b53",
+  "active": "c23a11927024253a",
   "lastOpenFiles": [
-    "kod/ic-tui/internal/program/styles.go",
-    "kod/bubbletea-color-test/main.go",
-    "kod/bubbletea-color-test/go.sum",
-    "kod/bubbletea-color-test/go.mod",
-    "kod/bubbletea-color-test/Dockerfile",
-    "kod/bubbletea-color-test",
+    "slike/ic-tui-compose-network-http-api-test.png",
+    "slike/xcp_req_res_diff.png",
+    "biljeske/19_04_2024.md",
+    "slike/ic-ecu-ic-tui-compose-test.png",
+    "slike/GW_ECU_UDS_RC_candump.png",
     "biljeske/24_05_2024.md",
+    "slike/Pasted image 20231110154651.png",
+    "slike/bubbletea_POST_test.png",
     "biljeske/31_05_2024.md",
-    "kod/ic-tui/cmd/ic-tui/ic-tui.go",
-    "kod/ic-tui/cmd/ic-tui",
-    "kod/ic-tui/Dockerfile",
-    "kod/zadaci/CAN_IC_zadatak/kod/compose.yml",
-    "kod/zadaci/CAN_IC_zadatak/kod/ic-tui/build/ic-tui",
-    "kod/ecu-template/venv/lib/python3.11/site-packages/idna-3.7.dist-info/LICENSE.md",
-    "Pasted image 20240525000847.png",
-    "slike/gtk-error-agl-ic.png",
+    "kod/zadaci/CAN_IC_zadatak/kod/ic-ecu/impl/ecu_model.py~",
+    "kod/zadaci/CAN_IC_zadatak/kod/gateway-ecu/impl/uds_handler.py~",
+    "biljeske/26_04_2024.md",
     "biljeske/10_05_2024.md",
+    "kod/zadaci/CAN_IC_zadatak/kod/ic-ecu/impl/can_handler.py~",
+    "kod/zadaci/CAN_IC_zadatak/kod/ic-tui/pkg/bubbles/statdash/styles.go",
+    "kod/zadaci/CAN_IC_zadatak/kod/ic-tui/pkg/bubbles/statdash/statdash.go",
+    "kod/zadaci/CAN_IC_zadatak/kod/ic-tui/pkg/bubbles/blinkers/styles.go",
+    "kod/zadaci/CAN_IC_zadatak/kod/ic-tui/pkg/bubbles/blinkers/blinkers.go",
+    "kod/zadaci/CAN_IC_zadatak/kod/ic-tui/pkg/bubbles/statdash",
+    "kod/zadaci/CAN_IC_zadatak/kod/ic-tui/pkg/bubbles/blinkers",
+    "kod/zadaci/CAN_IC_zadatak/kod/ic-tui/pkg/bubbles",
+    "kod/zadaci/CAN_IC_zadatak/kod/gateway-ecu/venv/lib/python3.11/site-packages/black-24.4.0.dist-info/licenses/AUTHORS.md",
+    "kod/ecu-template/venv/lib/python3.11/site-packages/idna-3.7.dist-info/LICENSE.md",
+    "slike/gtk-error-agl-ic.png",
     "biljeske/17_05_2024.md",
     "kod/agl-ic-compose/gui/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
     "kod/agl-ic-compose/gui/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
     "kod/agl-ic-compose/gui/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
     "kod/agl-ic-compose/gui/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
-    "kod/agl-ic-compose/gui/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
-    "kod/agl-ic-compose/gui/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png",
-    "kod/agl-ic-compose/gui/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png",
-    "kod/agl-ic-compose/gui/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png",
     "kod/agl-ic-compose/gui/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
     "kod/agl-ic-compose/gui/README.md",
     "kod/agl-ic-compose/gui/LICENSE.md",
@@ -225,9 +185,6 @@
     "kod/agl-ic-compose/kuksa.val/kuksa_apps/s3/readme.md",
     "kod/agl-ic-compose/kuksa.val/kuksa_apps/node-red/README.md",
     "kod/agl-ic-compose/kuksa.val/kuksa-val-server/src/Readme.md",
-    "kod/agl-ic-compose/kuksa.val/kuksa-val-server/protos/README.md",
-    "kod/agl-ic-compose/kuksa.val/doc/pictures/README.md",
-    "kod/agl-ic-compose/kuksa.val/doc/protocol/support.md",
-    "kod/agl-ic-compose/kuksa.val/doc/protocol/README.md"
+    "kod/agl-ic-compose/kuksa.val/kuksa-val-server/protos/README.md"
   ]
 }

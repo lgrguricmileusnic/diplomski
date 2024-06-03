@@ -1,0 +1,27 @@
+services:
+  ic:
+    build: ./ic-tui
+    networks:
+      - bus1
+      - gui
+    ports:
+      - "1234:22"
+    
+  ic-ecu:
+    build: ./ic-ecu
+    networks:
+      - bus1
+      - gui
+  
+  gw-ecu:
+    build: ./gateway-ecu
+    networks:
+      - bus1
+
+networks:
+  bus1:
+    driver: lovrogm/dockercan:latest
+    driver_opts:
+      host_if: "ctf_can"
+  gui:
+    driver: bridge
