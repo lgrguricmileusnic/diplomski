@@ -11,8 +11,12 @@
             "id": "c23a11927024253a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "biljeske/31_05_2024.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "biljeske/31_05_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "biljeske/31_05_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "biljeske/31_05_2024.md"
+              }
             }
           }
         ]
@@ -140,26 +148,37 @@
   },
   "active": "c23a11927024253a",
   "lastOpenFiles": [
+    "latex/literatura.bib",
+    "latex/fer.cls",
+    "latex/fer.bst",
+    "latex/diplomski.tex",
+    "latex/diplomski(3).zip",
+    "biljeske/pdf/lovro_grguricmileusnic_31_05_2024.pdf",
+    "biljeske/pdf/lovro_grguricmileusnic_07_06_2024.pdf",
+    "biljeske/24_05_2024.md",
+    "biljeske/31_05_2024.md",
+    "biljeske/07_06_2024.md",
+    "biljeske/19_01_2024.md",
+    "biljeske/pdf/lovro_grguricmileusnic_24_05_2024.pdf",
+    "biljeske/05_04_2024.md",
+    "biljeske/12_01_2024.md",
+    "biljeske/08_12_2023.md",
+    "biljeske/17_11_2023.md",
+    "biljeske/10_11_2023.md",
+    "biljeske/03_11_2023.md",
+    "biljeske/08_03_2024.md",
+    "biljeske/27_10_2023.md",
+    "biljeske/20_10_2023.md",
     "kod/docKar/src",
     "kod/docKar/compose.yml",
     "kod/docKar/generate.py",
-    "kod/docKar/ecus/ic-tui/pkg/bubbles/statdash/styles.go",
-    "kod/docKar/ecus/ic-tui/pkg/bubbles/statdash/statdash.go",
-    "kod/docKar/ecus/ic-tui/pkg/bubbles/blinkers/styles.go",
-    "kod/docKar/ecus/ic-tui/pkg/bubbles/blinkers/blinkers.go",
-    "kod/docKar/ecus/ic-tui/pkg/bubbles/statdash",
-    "kod/docKar/ecus/ic-tui/pkg/bubbles/blinkers",
-    "kod/docKar/ecus/ic-tui/pkg/bubbles",
-    "kod/docKar/ecus/ic-tui/pkg",
     "slike/ic-tui-compose-network-http-api-test.png",
     "slike/xcp_req_res_diff.png",
     "biljeske/19_04_2024.md",
     "slike/ic-ecu-ic-tui-compose-test.png",
     "slike/GW_ECU_UDS_RC_candump.png",
-    "biljeske/24_05_2024.md",
     "slike/Pasted image 20231110154651.png",
     "slike/bubbletea_POST_test.png",
-    "biljeske/31_05_2024.md",
     "biljeske/26_04_2024.md",
     "biljeske/10_05_2024.md",
     "kod/zadaci/CAN_IC_zadatak/kod/gateway-ecu/venv/lib/python3.11/site-packages/black-24.4.0.dist-info/licenses/AUTHORS.md",
@@ -174,17 +193,6 @@
     "kod/agl-ic-compose/gui/LICENSE.md",
     "kod/agl-ic-compose/ic/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
     "kod/agl-ic-compose/ic/README.md",
-    "kod/agl-ic-compose/ic/LICENSE.md",
-    "kod/agl-ic-compose/ic2/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
-    "kod/agl-ic-compose/ic2/README.md",
-    "kod/agl-ic-compose/ic2/LICENSE.md",
-    "kod/agl-ic-compose/kuksa.val/kuksa-val-server/test/unit-test/readme.md",
-    "kod/agl-ic-compose/kuksa.val/kuksa-val-server/test/stresstest/Readme.md",
-    "kod/agl-ic-compose/kuksa.val/kuksa_certificates/jwt/README.md",
-    "kod/agl-ic-compose/kuksa.val/test/stresstest/README.md",
-    "kod/agl-ic-compose/kuksa.val/kuksa_apps/s3/readme.md",
-    "kod/agl-ic-compose/kuksa.val/kuksa_apps/node-red/README.md",
-    "kod/agl-ic-compose/kuksa.val/kuksa-val-server/src/Readme.md",
-    "kod/agl-ic-compose/kuksa.val/kuksa-val-server/protos/README.md"
+    "kod/agl-ic-compose/ic/LICENSE.md"
   ]
 }

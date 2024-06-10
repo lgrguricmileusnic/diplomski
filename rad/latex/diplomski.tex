@@ -1,0 +1,115 @@
+\documentclass[times, utf8, diplomski, numeric]{fer}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[parfill]{parskip}
+
+\begin{document}
+
+% TODO: Navedite broj rada.
+\thesisnumber{000}
+
+% TODO: Navedite naslov rada.
+\title{Proširivi sustav za stvaranje CTF zadataka specifičnih za sustave upravljanja i
+zabave u automobilima}
+
+% TODO: Navedite vaše ime i prezime.
+\author{Lovro Grgurić Mileusnić}
+
+\maketitle
+
+% Ispis stranice s napomenom o umetanju izvornika rada. Uklonite naredbu \izvornik ako želite izbaciti tu stranicu.
+\izvornik
+
+% Dodavanje zahvale ili prazne stranice. Ako ne želite dodati zahvalu, naredbu ostavite radi prazne stranice.
+\zahvala{}
+
+\tableofcontents
+
+\chapter{Uvod}
+Današnji automobili i ostala cestovna vozila značajno se razlikuju od njihovih prvih inačica, iako im glavna namjena ostala ista. Pojavom i širom primjenom elektronike, automobili više nisu samo mehanički strojevi, već sadrže određen broj međusobno povezanih elektroničkih upravljačkih jedinica (engl. \textit{electronic control unit}, ECU) \cite{koscher2010}. Elektroničke upravljačke jedinice svojom međusobnom suradnjom omogućavaju sigurno upravljanje vozilom, ali i dodatne funkcionalnosti poput klimatizacije i sustava zabave (engl. \textit{in vehicle infotainment}). Većina komunikacije između elektroničkih upravljačkih jedinica odvija se putem protokola poput \textit{Controller Area Network} (CAN) protokola i pripadajućih sabirnica. Prvotno namijenjen za primjenu u automobilima, CAN ima svojstva prikladna za komunikaciju u stvarnom vremenu (engl. \textit{real time}), kao i sposobnosti detektiranja grešaka i propuštanja poruka višeg prioriteta\cite{canopen1}. Međutim, iako ga specifikacija druge inačice CAN protokola, CAN 2.0, opisuje kao protokol s visokom razinom sigurnosti, ni ta niti originalna specifikacija ne razmatraju osiguravanje osnovnih sigurnosnih svojstava povjerljivosti, integriteta i dostupnosti (engl. \textit{confidentiality, integrity, availability}, CIA) \cite{bosch1991, canislabs1}. Zbog drastične prirode posljedica koje bi neispravan rad sustava automobila mogao imati na vozača i njegove suputnike te ostale sudionike prometa, pri inženjeringu sustava automobila uvijek je bila pridodana posebna pažnja njihovoj funkcionalnoj sigurnosti (engl. \textit{safety}) i ispravnosti, ali ne nužno i kibernetičkoj sigurnosti\cite{koscher2010}. Zbog tadašnje zatvorenosti komunikacije ovih sustava, za potencijalnog napadača nije postojala površina (engl. attack surface) koju bi mogao iskoristiti bez fizičkog pristupa CAN sabirnici.
+
+Interne mreže današnjih vozila kao i programska podrška njihovih sustava znatno su kompleksnije i povezanije s vanjskim svijetom\cite{huq2020driving}. Mnogi novi modeli automobila su opremljeni SIM karticama odnosno mogućnošću povezivanja na mobilnu mrežu u svrhu komunikacije sa servisima proizvođača u oblaku (engl. cloud services) i mobilnim aplikacijama koje omogućuju udaljeno upravljanje vozilom. Uz to, vozila povezana na mobilnu mrežu koriste ju i u svrhu preuzimanja ažuriranja (engl. \textit{Over-The-Air updates}, OTA) za sustave zabave, ali i za kritične upravljačke sustave i elektroničke upravljačke jedinice. Bluetooth se najčešće koristi za povezivanje mobilnog telefona sa sustavom zabave kako bi se omogućilo pozivanje i reprodukcija glazbe. U svrhu bolje integracije mobilnih telefona u sustav zabave, mnogi proizvođači podržavaju platforme poput \textit{Android Auto} ili \textit{Apple Carplay}, kojima se sustav zabave proširuje mogućnostima preuzimanja i pokretanja raznovrsnih aplikacija iz izvora treće strane. Vozila opremljena mrežnim karticama s mogućnošću stvaranja i korištenja Wi-Fi bežičnih pristupnih točaka, mogu dijeliti pristup mobilnoj mreži koji ostvaruju s prethodno navedenim SIM karticama ili povezivati se na pristupne točke korisnika u svrhu preuzimanja OTA ažuriranja ili aplikacija. Za skoro svaku od navedenih funkcionalnosti istraživači automobilske sigurnosti pokazali su mogućnost njihvog iskorištavanja i ulančavanja otkrivenih ranjivosti u svrhu neautoriziranog pristupa i postizanja kontrole nad sustavima zabave, ali i kritičnim sustavima upravljanja automobila \cite{nie2017free, nie2018over, cai20190, tencent2018bmw, miller2015remote, curry2023web}. Nadalje, već u izvješću o stanju automobilske sigurnosti tvrtke \textit{Upstream Security} iz 2019. godine, predviđa se da će sva nova vozila proizvedena u 2025. godini imati navedene funkcionalnosti, ali i da će podržavati komunikaciju među vozilima (engl. \textit{Vehicle-to-Vehicle, V2V}) i komunikaciju vozila s infrastrukturom (engl. \textit{Vehicle-to-Infrastructure, V2I}), dodatno povećavajući dostupnu površinu napada \cite{upstream2019report}.
+
+Nagli rast povezanosti i kompleksnosti sustava vozila stvara potrebu za obrazovanjem određenog broja stručnjaka i inženjera koji će testirati i osiguravati kvalitetniju kibernetičku sigurnost tih sustava, od razine sklopovlja do \textit{backend} servisa te V2V i V2I komunikacije. Osim formalnih sustava obrazovanja, popularan format za edukaciju stručnjaka kibernetičke sigurnosti su i \textit{Capture the Flag} (CTF) zadaci. Međutim, u \cite{vsvabensky2021cybersecurity} autori ističu da se u analiziranom uzorku od 12 952 \textit{Capture the Flag} zadataka, zadaci klasificirani u područje sigurnosti komponenti (engl. \textit{component security}) čine tek 8,19\%, što je 6. najmanji udio od ukupno 8 analiziranih područja znanja. Većina današnjih \textit{Capture the Flag} zadataka spada u razvijenije i poznatije grane kibernetičke sigurnosti poput \textit{web} sigurnosti, sigurnosti operacijskih sustava i aplikacija te sigurnosti oblaka (engl. \textit{cloud security})\cite{prinetto2020hardware}. U svrhu edukacije sigurnosnih stručnjaka u području kibernetičke sigurnosti u automobilskoj industriji potrebno je napraviti proširivi sustav koji će služiti kao temelj za stvaranje \textit{Capture the Flag} zadataka koji sadrže specifičnosti sustava u automobilima.
+
+Rad je strukturiran kroz 6 poglavlja. U prvom poglavlju nakon uvoda, odnosno drugom poglavlju cjelokupnog rada, napravljen je pregled komunikacijskih i dijagnostičkih protokola te arhitekture modernog automobila. Kroz ovo poglavlje bit će opisani protokoli korišteni u današnjim automobilima kao i sustavi koje povezuju, čime se postavlja teoretska i tehnička podloga za razumijevanje napada na iste, opisanih u trećem poglavlju. U četvrtom poglavlju razmatraju se postojeći sustavi za obuku stručnjaka sigurnosti u grani sigurnosti automobila, ali i u ostalim granama sigurnosti te je definiran opis svojstava takvog sustava. U petom poglavlju opisana je implementacija proširivog sustava za stvaranje \textit{Capture the Flag} zadataka specifičnih za sustave upravljanja i zabave u automobilima, kao i tehničke odluke donesene tijekom njegove razrade. Naposljetku, u zaključku je opisan je konačni rezultat, prednosti i mane implementiranog sustava te njegova moguća unaprjeđenja i smjernice za daljnji razvoj.
+
+\chapter{Arhitektura i protokoli modernih automobila}
+Kao temelj za razumijevanje površina i mogućih vektora napada na sustave automobila, kroz ovo poglavlje opisana je poopćena arhitektura modernog automobila. Uz to, popisani su i opisani komunikacijski i dijagnostički protokoli specifični za automobile.
+\section{Generalizirana arhitektura automobila}
+Prema \cite{nasser2023automotive, koscher2010, knight2020hacking, huq2020driving, aliwa2021cyberattacks}, sustavi vozila dijele se prema funkciji u domene:
+
+\begin{itemize}
+    \item pogonskog sklopa (engl. \textit{powertrain})
+    \item šasije (engl. \textit{chassis})
+    \item kabine (engl. \textit{interior cabin} ili \textit{body})
+    \item informacija, zabave i povezivosti (engl. \textit{infotainment and connectivity})
+\end{itemize}
+
+Elektroničke upravljačke jedinice odnosno ECU-ovi, pripadaju domenama pogonskog sklopa, šasije i unutarnje kabine te služe za koordiniranje i upravljanje većinom funkcija automobila. ECU-ovi detektiraju trenutne operativne uvjete pomoću senzora, procesuiraju ih i aktiviraju aktuatore\cite{bosch2022handbook}. Sklopovlje ECU-a najčešće se nalazi u zatvorenom zaštitnom kućištu s izloženim priključcima za spajanje na ostatak mreže automobila, senzore i aktuatore. Sklopovlje je najčešće tiskana pločica na kojoj se najčešće nalazi integrirani krug za upravljanje snagom (engl. \textit{power management integrated circuit}, PMIC), primopredajnici protokola kojim komuniciraju, memorije te mikrokontroler ili sustav na čipu (engl. \textit{System on a chip}), SoC)\cite{nasser2023automotive}. ECU-ovi ovih domena najčešće zbog \textit{real time} zahtjeva međusobno komuniciraju putem CAN ili FlexRay protokola, gdje specifična topologija mreže ovisi o modelu automobila \cite{bosch2022handbook}.
+
+Domeni pogonskog sklopa pripadaju ECU-ovi koji upravljaju i utječu na funkciju motora i prijenosa, a to su upravljački modul motora (engl. \textit{engine control module}, ECM) i upravljački modul prijenosa (engl. \textit{transmission control module}, TCM). U literaturi se često koriste i nazivi upravljačka jedinica motora (engl. \textit{engine control unit}, ECU), odnosno upravljačka jedinica prijenosa (engl. \textit{transmission control unit}, TCU)\cite{nasser2023automotive, koscher2010}. Često automobili imaju jedan snažniji ECU koji obavlja obje funkcije, upravljanje motorom i upravljanje prijenosom te se takav ECU naziva upravljačkom jedinicom pogonskog sklopa (engl. \textit{powertrain control unit}, PCU) ili upravljačkim modulom pogonskog sklopa (engl. \textit{powertrain control module}, PCM) \cite{bosch2022handbook, ecutesting}. U slučaju vozila na električni pogon, u domeni pogonskog sklopa pripadaju sustav upravljanja baterijom (engl. \textit{battery managment system}, BMS), inverter \engl{inverter} i PCU. Uz navedene, u domenu pogonskog sklopa ulaze i druge upravljačke jedinice koje prikupljaju podatke sa senzora i upravljaju aktuatorima relevantnima pogonskom sklopu. S obzirom na to da navedeni ECU-ovi imaju izravan utjecaj na kretanje automobila, njihovo kompromitiranje može rezultirati fizičkim ozljedama vozača i putnika.
+
+U domenu šasije svrstavaju se sustavi i senzori odgovorni za funkcije zaštite putnika koje zahtijevaju reakciju u stvarnom vremenu poput sustava kočenja, ovjesa i zračnih jastuka. Sukladno tome, kao i u slučaju sustava domene pogonskog sklopa, njihovo ispravno funkcioniranje je iznimno bitno za sigurnost vozača i putnika\cite{nasser2023automotive}. Jedna od upravljačkih jedinica koje pripadaju u domenu šasije je upravljački modul elektroničkog kočenja (engl. \textit{electronic braking control module}, EBCM). EBCM je specijalizirani modul koji upravlja aktivnim sigurnosnim funkcijama kočenja poput ABS-a (njem. \textit{Antiblockiersystem}), elektroničkom kontrolom stabilnosti (engl. \textit{electronic stability control}, ESC) te automatskim kočenjem u hitnim situacijama. Uz EBCM, u domenu šasije svrstavaju se i napredni sustav za podršku vozaču pri upravljanju vozilom (engl. \textit{Advanced driver-assistance system}, ADAS), koji je sve češće prisutan u novim vozilima\cite{nasser2023automotive}. ADAS je odgovoran za funkcije poput rada tempomata, održavanja razmaka između vozila,  automatskog zadržavanja trenutne prometne trake, automatskog parkiranja te autonomne vožnje \cite{bosch2022handbook}. Domeni šasije pripada i upravljački modul zračnih jastuka (engl. \textit{airbag control module}, ACM) te sustav servo upravljača (engl. \textit{electronic power steering, EPS}.
+
+U domenu unutarnje kabine spadaju sustavi manje kritičnih funkcija te uključuju sustave grijanja, ventilacije i klimatizacije (engl. \textit{heating, ventilation and air conditioning}, HVAC), pripadajući upravljački modul klimatizacije (engl. \textit{climate control module}, CCM) te ECU-ove za prikupljanje podataka sa senzora sigurnosnih pojasa i sjedala i za upravljanje osvjetljenjem, prozorima, brisačima i ostalim dijelovima kabine. Uz navedene, kao sigurnosno bitni sustavi, ističu se sustav za ulaz bez ključa (engl. \textit{keyless entry system}, KES) i ECU za upravljanje otključavanjem vrata vozila te pripadajući prijemnik za daljinsko zaključavanje (engl. \textit{remote control door lock receiver}, RCDLR). KES i RCDL sustavi najčešće su iskorištavani sustavi u slučaju krađe vozila, često putem \textit{relay} napada \cite{nasser2023automotive, cbc2020relay}.
+
+Suprotno prethodne tri domene, domena informacija, zabave i povezivosti sadrži sustave čije funkcionalnosti većinom nisu visokog prioriteta niti imaju \textit{real time} zahtjeve. Međutim, iako nisu kriticni, povezani su, povrsina napada... 
+
+
+
+Sustavi ove domene mogu biti spojeni direktno na CAN sabirnice ili putem zasebnog ECU-a poveznika (engl. \textit{gateway ECU}).
+navedi da mogu blokirati kritične sustave, pronadji clanak
+
+edr
+
+\section{Komunikacijski protokoli}
+\subsection{CAN}
+\subsection{LIN}
+\subsection{FlexRay}
+\subsection{MOST}
+\subsection{Automotive Ethernet}
+\section{Dijagnostički protokoli}
+\subsection{OBD-II}
+\subsection{UDS}
+\subsection{XCP}
+
+\chapter{Pregled postojećih napada}
+\section{Napadi na komunikacijske i dijagnostičke protokole}
+opcenito opisi za ove koje ne razmatramo u detalje
+\subsection{CAN}
+\subsection{UDS}
+\subsection{XCP}
+\section{Napadi na sustave automobila}
+\chapter{Postojeći edukacijski materijali u području sigurnosti vozila}
+hw based caputre the flag challenges,
+blockharbour ctf
+htb
+onaj guide od valseka
+... pogledaj biljeske
+\chapter{Implementacija sustava za obuku stručnjaka sigurnosti}
+
+spomeni xcp scapy ogranicenj
+\chapter{Zaključak}
+ Zaključak.
+
+\bibliography{literatura}
+\bibliographystyle{fer}
+
+
+\begin{sazetak}
+Sažetak na hrvatskom jeziku.
+
+\kljucnerijeci{Ključne riječi, odvojene zarezima.}
+\end{sazetak}
+
+% TODO: Navedite naslov na engleskom jeziku.
+\engtitle{Title}
+\begin{abstract}
+Abstract.
+
+\keywords{Keywords.}
+\end{abstract}
+
+\end{document}
