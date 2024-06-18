@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/31_05_2024.md",
+                "file": "biljeske/19_04_2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/31_05_2024.md",
+                "file": "biljeske/19_04_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/31_05_2024.md",
+                "file": "biljeske/19_04_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/31_05_2024.md"
+                "file": "biljeske/19_04_2024.md"
               }
             }
           }
@@ -148,6 +148,14 @@
   },
   "active": "c23a11927024253a",
   "lastOpenFiles": [
+    "biljeske/vanjske_datoteke/UDS_Faltposter_softing2016.pdf",
+    "biljeske/19_04_2024.md",
+    "biljeske/26_04_2024.md",
+    "biljeske/03_05_2024.md",
+    "biljeske/12_04_2024.md",
+    "biljeske/10_05_2024.md",
+    "biljeske/24_05_2024.md",
+    "biljeske/31_05_2024.md",
     "latex/backup/slike/stanja.png",
     "latex/backup/slike/sabirnica.png",
     "latex/backup/slike/arhitektura.png",
@@ -168,9 +176,6 @@
     "latex/backup2/fer.bst",
     "latex/slike/arhitektura.png",
     "latex/slike/arhitektura2.png",
-    "latex/slike/wavedrom.png",
-    "biljeske/24_05_2024.md",
-    "biljeske/31_05_2024.md",
     "biljeske/07_06_2024.md",
     "biljeske/19_01_2024.md",
     "biljeske/05_04_2024.md",
@@ -182,17 +187,12 @@
     "biljeske/08_03_2024.md",
     "biljeske/27_10_2023.md",
     "biljeske/20_10_2023.md",
-    "biljeske/19_04_2024.md",
-    "biljeske/26_04_2024.md",
-    "biljeske/10_05_2024.md",
     "kod/zadaci/CAN_IC_zadatak/kod/gateway-ecu/venv/lib/python3.11/site-packages/black-24.4.0.dist-info/licenses/AUTHORS.md",
     "kod/ecu-template/venv/lib/python3.11/site-packages/idna-3.7.dist-info/LICENSE.md",
     "biljeske/17_05_2024.md",
     "kod/agl-ic-compose/gui/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
     "kod/agl-ic-compose/gui/README.md",
     "kod/agl-ic-compose/gui/LICENSE.md",
-    "kod/agl-ic-compose/ic/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
-    "kod/agl-ic-compose/ic/README.md",
-    "kod/agl-ic-compose/ic/LICENSE.md"
+    "kod/agl-ic-compose/ic/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md"
   ]
 }

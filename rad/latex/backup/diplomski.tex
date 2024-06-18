@@ -1,5 +1,6 @@
 \documentclass[times, utf8, diplomski, numeric]{fer}
 \usepackage{booktabs}
+\usepackage{courier}
 \graphicspath{ {./slike/} }
 \usepackage[parfill]{parskip}
 
@@ -32,14 +33,14 @@ zabave u automobilima}
 \chapter{Uvod}
 Današnji automobili i ostala cestovna vozila značajno se razlikuju od njihovih prvih inačica, iako im glavna namjena ostala ista. Pojavom i širom primjenom elektronike, automobili više nisu samo mehanički strojevi, već sadrže određen broj međusobno povezanih elektroničkih upravljačkih jedinica (engl. \textit{electronic control unit}, ECU) \cite{koscher2010}. Elektroničke upravljačke jedinice svojom međusobnom suradnjom omogućavaju sigurno upravljanje vozilom, ali i dodatne funkcionalnosti poput klimatizacije te sustava za informacije i zabavu (engl. \textit{in-vehicle infotainment}). Većina komunikacije između elektroničkih upravljačkih jedinica odvija se putem protokola poput \textit{Controller Area Network} (CAN) protokola i pripadajućih sabirnica. Prvotno namijenjen za primjenu u automobilima, CAN ima svojstva prikladna za komunikaciju u stvarnom vremenu (engl. \textit{real time}), kao i sposobnosti detektiranja grešaka i propuštanja poruka višeg prioriteta \cite{canopen1}. Međutim, iako ga specifikacija druge inačice CAN protokola, CAN 2.0, opisuje kao protokol s visokom razinom sigurnosti, ni ta niti originalna specifikacija ne razmatraju osiguravanje osnovnih sigurnosnih svojstava povjerljivosti, integriteta i dostupnosti (engl. \textit{confidentiality, integrity, availability}, CIA) \cite{bosch1991, canislabs1}. Zbog drastične prirode posljedica koje bi neispravan rad sustava automobila mogao imati na vozača i njegove suputnike te ostale sudionike prometa, pri inženjeringu sustava automobila uvijek je bila pridodana posebna pažnja njihovoj funkcionalnoj sigurnosti (engl. \textit{safety}) i ispravnosti, ali ne nužno i kibernetičkoj sigurnosti \cite{koscher2010}. Zbog tadašnje zatvorenosti komunikacije ovih sustava, za potencijalnog napadača nije postojala površina (engl. attack surface) koju bi mogao iskoristiti bez fizičkog pristupa CAN sabirnici.
 
-Interne mreže današnjih vozila kao i programska podrška njihovih sustava znatno su kompleksnije i povezanije s vanjskim svijetom \cite{huq2020driving}. Mnogi novi modeli automobila su opremljeni SIM karticama odnosno mogućnošću povezivanja na mobilnu mrežu u svrhu komunikacije sa servisima proizvođača u oblaku (engl. cloud services) i mobilnim aplikacijama koje omogućuju udaljeno upravljanje vozilom. Uz to, vozila povezana na mobilnu mrežu koriste ju i u svrhu preuzimanja ažuriranja (engl. \textit{Over-The-Air updates}, OTA) za sustave zabave, ali i za kritične upravljačke sustave i elektroničke upravljačke jedinice. \textit{Bluetooth} tehnologija najčešće se koristi za povezivanje mobilnog telefona sa sustavom zabave kako bi se omogućilo pozivanje i reprodukcija glazbe. U svrhu bolje integracije mobilnih telefona u sustav zabave, mnogi proizvođači podržavaju platforme poput \textit{Android Auto} ili \textit{Apple Carplay}, kojima se sustav zabave proširuje mogućnostima preuzimanja i pokretanja raznovrsnih aplikacija iz izvora treće strane. Vozila opremljena mrežnim karticama s mogućnošću stvaranja i korištenja Wi-Fi bežičnih pristupnih točaka, mogu dijeliti pristup mobilnoj mreži koji ostvaruju s prethodno navedenim SIM karticama ili povezivati se na pristupne točke korisnika u svrhu preuzimanja OTA ažuriranja ili aplikacija. Za skoro svaku od navedenih funkcionalnosti istraživači automobilske sigurnosti pokazali su mogućnost njihvog iskorištavanja i ulančavanja otkrivenih ranjivosti u svrhu neautoriziranog pristupa i postizanja kontrole nad sustavima zabave, ali i kritičnim sustavima upravljanja automobila \cite{nie2017free, nie2018over, cai20190, tencent2018bmw, miller2015remote, curry2023web}. Nadalje, već u izvješću o stanju automobilske sigurnosti tvrtke \textit{Upstream Security} iz 2019. godine, predviđa se da će sva nova vozila proizvedena u 2025. godini imati navedene funkcionalnosti, ali i da će podržavati komunikaciju među vozilima (engl. \textit{Vehicle-to-Vehicle, V2V}) i komunikaciju vozila s infrastrukturom (engl. \textit{Vehicle-to-Infrastructure, V2I}), dodatno povećavajući dostupnu površinu napada \cite{upstream2019report}.
+Interne mreže današnjih vozila kao i programska podrška njihovih sustava znatno su kompleksnije i povezanije s vanjskim svijetom \cite{huq2020driving}. Mnogi novi modeli automobila su opremljeni SIM karticama odnosno mogućnošću povezivanja na mobilnu mrežu u svrhu komunikacije sa servisima proizvođača u oblaku (engl. cloud services) i mobilnim aplikacijama koje omogućuju udaljeno upravljanje vozilom. Uz nevedeno, mobilna mreža koristi se i u svrhu preuzimanja ažuriranja (engl. \textit{Over-The-Air updates}, OTA) za sustave zabave, ali i za kritične elektroničke upravljačke jedinice. \textit{Bluetooth} tehnologija najčešće se koristi za povezivanje mobilnog telefona sa sustavom zabave kako bi se omogućilo pozivanje i reprodukcija glazbe. U svrhu bolje integracije mobilnih telefona u sustav zabave, mnogi proizvođači podržavaju platforme poput \textit{Android Auto} ili \textit{Apple Carplay}, kojima se sustav zabave proširuje mogućnostima preuzimanja i pokretanja raznovrsnih aplikacija iz izvora treće strane. Vozila opremljena mrežnim karticama s mogućnošću stvaranja i korištenja Wi-Fi bežičnih pristupnih točaka, mogu dijeliti pristup mobilnoj mreži koji ostvaruju s prethodno navedenim SIM karticama ili povezivati se na pristupne točke korisnika u svrhu preuzimanja OTA ažuriranja ili aplikacija. Za skoro svaku od navedenih funkcionalnosti istraživači automobilske sigurnosti pokazali su mogućnost njihvog iskorištavanja i ulančavanja otkrivenih ranjivosti u svrhu neautoriziranog pristupa i postizanja kontrole nad sustavima zabave, ali i kritičnim sustavima upravljanja automobila \cite{nie2017free, nie2018over, cai20190, tencent2018bmw, miller2015remote, curry2023web}. Nadalje, već u izvješću o stanju automobilske sigurnosti tvrtke \textit{Upstream Security} iz 2019. godine, predviđa se da će sva nova vozila proizvedena u 2025. godini imati navedene funkcionalnosti, ali i da će podržavati komunikaciju među vozilima (engl. \textit{Vehicle-to-Vehicle, V2V}) i komunikaciju vozila s infrastrukturom (engl. \textit{Vehicle-to-Infrastructure, V2I}), dodatno povećavajući dostupnu površinu napada \cite{upstream2019report}.
 
 Nagli rast povezanosti i kompleksnosti sustava vozila stvara potrebu za obrazovanjem određenog broja stručnjaka i inženjera koji će testirati i osiguravati kvalitetniju kibernetičku sigurnost tih sustava, od razine sklopovlja do \textit{backend} servisa te V2V i V2I komunikacije. Osim formalnih sustava obrazovanja, popularan format za edukaciju stručnjaka kibernetičke sigurnosti su i \textit{Capture the Flag} (CTF) zadaci. Međutim, u \cite{vsvabensky2021cybersecurity} autori ističu da se u analiziranom uzorku od 12 952 \textit{Capture the Flag} zadataka, zadaci klasificirani u područje sigurnosti komponenti (engl. \textit{component security}) čine tek 8,19\%, što je 6. najmanji udio od ukupno 8 analiziranih područja znanja. Većina današnjih \textit{Capture the Flag} zadataka spada u razvijenije i poznatije grane kibernetičke sigurnosti poput \textit{web} sigurnosti, sigurnosti operacijskih sustava i aplikacija te sigurnosti oblaka (engl. \textit{cloud security})\cite{prinetto2020hardware}. U svrhu edukacije sigurnosnih stručnjaka u području kibernetičke sigurnosti u automobilskoj industriji potrebno je napraviti proširivi sustav koji će služiti kao temelj za stvaranje \textit{Capture the Flag} zadataka koji sadrže specifičnosti sustava u automobilima.
 
-Rad je strukturiran kroz 6 poglavlja. U prvom poglavlju nakon uvoda, odnosno drugom poglavlju cjelokupnog rada, napravljen je pregled komunikacijskih i dijagnostičkih protokola te arhitekture modernog automobila. Kroz ovo poglavlje bit će opisani protokoli korišteni u današnjim automobilima kao i sustavi koje povezuju, čime se postavlja teoretska i tehnička podloga za razumijevanje napada na iste, opisanih u trećem poglavlju. U četvrtom poglavlju razmatraju se postojeći sustavi za obuku stručnjaka sigurnosti u grani sigurnosti automobila, ali i u ostalim granama sigurnosti te je definiran opis svojstava takvog sustava. U petom poglavlju opisana je implementacija proširivog sustava za stvaranje \textit{Capture the Flag} zadataka specifičnih za sustave upravljanja i zabave u automobilima, kao i tehničke odluke donesene tijekom njegove razrade. Naposljetku, u zaključku je opisan je konačni rezultat, prednosti i mane implementiranog sustava te njegova moguća unaprjeđenja i smjernice za daljnji razvoj.
+Rad je strukturiran kroz 6 poglavlja. U prvom poglavlju nakon uvoda, odnosno drugom poglavlju cjelokupnog rada, napravljen je pregled protokola te arhitekture modernog automobila. Kroz ovo poglavlje bit će opisani protokoli korišteni u današnjim automobilima kao i sustavi koje povezuju, čime se postavlja teoretska i tehnička podloga za razumijevanje napada na iste, opisanih u trećem poglavlju. U četvrtom poglavlju razmatraju se postojeći sustavi za obuku stručnjaka sigurnosti u grani sigurnosti automobila, ali i u ostalim granama sigurnosti te je definiran popis poželjnih svojstava takvog sustava. U petom poglavlju opisana je implementacija proširivog sustava za stvaranje \textit{Capture the Flag} zadataka specifičnih za sustave upravljanja i zabave u automobilima. Naposljetku, u zaključku su opisani konačan rezultat, prednosti i nedostatci implementiranog sustava te moguća unaprjeđenja i smjernice za daljnji razvoj.
 
 \chapter{Sustavi i protokoli modernih automobila}
-Kao temelj za razumijevanje iskoristivih površina i mogućih vektora napada na sustave automobila, kroz ovo poglavlje opisana je električna i elektronička arhitektura modernog automobila (engl. \textit{Electrical/Electronic} architecture). Uz to, opisani su i komunikacijski te dijagnostički protokoli specifični za automobile.
+Kao temelj za razumijevanje iskoristivih površina i mogućih vektora napada na sustave automobila, kroz ovo poglavlje opisana je električna i elektronička arhitektura modernog automobila (engl. \textit{Electrical/Electronic} architecture). Opisani su i protokoli specifični za automobile kroz više slojeva OSI modela.
 \section{E/E arhitektura modernog automobila}
 E/E arhitektura obuhvaća elektroničke komponente, električko ožičenje, tehnologije umrežvanja i programsku podršku jednog automobila \cite{nasser2023automotive}. Prema \cite{nasser2023automotive, koscher2010, knight2020hacking, huq2020driving, aliwa2021cyberattacks}, sustavi vozila dijele se prema funkciji u domene:
 
@@ -77,7 +78,7 @@ Primarna funkcija upravljačke jedinice za telematiku (engl. \textit{telematics 
 Operacijski sustav središnje jedinice najčešće je utemeljen na \textit{Linux}, \textit{QNX} i \textit{Android} operacijskim sustavima ili operacijskom sustavu proizvođača (engl. \textit{proprietary} \cite{nasser2023automotive}. Operacijski sustav objedinjuje sve navedene funkcionalnosti te omogućava upravljanje istima putem središnjeg zaslona, konzole i te putem glasa \cite{bosch2022handbook}. Zbog visoke razine kompleksnosti i povezivosti, središnja jedinica ima najveću površinu napada te je česta probojna točka u ostatak sustava automobila u mnogim istraživanjima sigurnosti automobila \cite{aliwa2021cyberattacks, knight2020hacking, smith2016car, tencent2018bmw, miller2015remote}.
 
 \subsection{Ostale komponente}
-Od ostalih komponenti E/E mreže, bitno je spomenuti OBD-II priključak za dijagnostiku. OBD-II priključak omogućava serviserima brzo očitavanje dijagnostičkih kodova neispravnosti (engl. \textit{diagnostic trouble code}, DTC) te se u osobnim automobilima najčešće nalazi ispod upravljača automobila \cite{smith2016car}. Uz to, OBD-II priključak omogućava pristup CAN-u automobila te ukoliko je mreža neispravno segregirana moguće je putem OBD-II priključka  komunicirati s ECU-ovima kritičnima za sigurnost putnika \cite{knight2020hacking, smith2016car}. Potencijalni napadač koji već ima pristup unutrašnjosti automobila može iskoristiti neispravnu segregaciju mreže. Primjerice, spajanjem zloćudnog uređaja na OBD-II priključak može onemogućiti upravljački modul elektroničkog kočenja tijekom vožnje, ugrožavajući fizičku sigurnost putika.  
+Od ostalih komponenti E/E mreže, bitno je spomenuti OBD-II priključak za dijagnostiku. OBD-II priključak omogućava serviserima brzo očitavanje dijagnostičkih kodova neispravnosti (engl. \textit{diagnostic trouble code}, DTC) te se u osobnim automobilima najčešće nalazi ispod upravljača automobila \cite{smith2016car}. Uz navedeno, OBD-II priključak omogućava pristup CAN-u automobila te ukoliko je mreža neispravno segregirana moguće je putem OBD-II priključka  komunicirati s ECU-ovima kritičnima za sigurnost putnika \cite{knight2020hacking, smith2016car}. Potencijalni napadač koji već ima pristup unutrašnjosti automobila može iskoristiti neispravnu segregaciju mreže. Primjerice, spajanjem zloćudnog uređaja na OBD-II priključak može onemogućiti upravljački modul elektroničkog kočenja tijekom vožnje, ugrožavajući fizičku sigurnost putika.  
 
 \section{Tipovi E/E arhitektura}
 Tip E/E arhitekture može utjecati na površinu napada vozila te omogućiti ili onemogućiti određene vektore napada. U slučaju potpuno nesegregiranih E/E arhitektura, što je karakteristično za starije modele automobila, kompromitiranjem jednog od sustava automobila moguće je komunicirati sa svim ostalim sustavima. Jedan od modela s nesegregiranom E/E arhitekturom je \textit{Jeep Cherokeee} iz 2014. godine kojeg su uspjeli kompromitirati Miller i Valasek, nakon čega su proizvođači segregaciju E/E arhitektura krenuli provoditi i na jeftinijim modelima \cite{miller2015remote, dissecto2023networks}
@@ -110,7 +111,7 @@ Na slici \ref{fig:arhitektura} prikazana je generalizirana E/E arhitektura moder
 \label{fig:arhitektura}
 \end{figure}
 \newpage
-\section{Komunikacijski protokoli}
+\section{Protokoli fizičkog sloja i sloja podatkovne poveznice}
 \subsection{CAN}
 Protokol \textit{Controller area network} je serijski komunikacijski protokol sa svojstvima pogodnima za komunikaciju sustava u stvarnom vremenu\cite{bosch1991}. Predstavili su ga inženjeri tvrtke \textit{Robert Bosch GmbH} 1986. godine, na konferenciji \textit{Society of Automotive Engineers} (SAE) u Detroitu, a prvu primjenu u automobilskoj industriji imao je u modelu \textit{Mercedes-Benz W140}, puštenom na tržište 1991. godine te je danas standard za komunikaciju u motornim vozilima, ali se pojavljuje i u industrijskim upravljačkim sustavima\cite{bosch2022handbook, mercedes1991can}. Specifikacija CAN-a tvrtke \textit{Robert Bosch GmbH} standardizirana je u seriji standarda ISO 11898. 
 \newpage
@@ -158,7 +159,7 @@ Glavni dijelovi podatkovnog okvira prikazanog na slici \ref{fig:CAN_okvir} su:
 \end{enumerate}
 
 Uz navedene, na slici \ref{fig:CAN_okvir} pojavljuju se substitucijski bit RTR bita (engl. \textit{substitute remote request}, SSR) i bitovi r0 i r1 rezervirani za moguća proširenja protokola.
-Arbitražni identifikator SSporuke duljine je 11 bita za standardne poruke (CAN 2.0A) i 29 bita za proširene poruke. Poruke s nižom vrijednosti identifikatora imaju veći prioritet pri arbitraži. Skupa s RTR bitom čini arbitražno polje. RTR bit u recesivnoj "1" označava okvir zahtjeva, a u dominantnoj "0" podatkovni okvir. Ovakvim označavanjem okvira postiže se prednost podatkovnog okvira pri arbitraži nad okvirom zahtjeva s istim arbitražnim identifikatorom. Za specificiranje duljine podataka u oktetima koristi se 4-bitno DLC polje od kojih se zapravo koristi 3 bita, s obzirom na to da je duljina podataka ograničena na 8 okteta. Nakon polja s podacima nalaze se CRC kod i ACK bit. Čvor koji prenosi okvir postavlja ACK bit u recesivnu "1" jer očekuje da će bar jedan čvor potvrditi ispravnost poruke postavljanjem stanja sabirnice u dominantnu "0". Naposljetku se prenosi niz od 7 recesivnih "1" kao oznaka kraja okvira (EOF).
+Arbitražni identifikator poruke duljine je 11 bita za standardne poruke (CAN 2.0A) i 29 bita za proširene poruke. Poruke s nižom vrijednosti identifikatora imaju veći prioritet pri arbitraži. Skupa s RTR bitom čini arbitražno polje. RTR bit u recesivnoj "1" označava okvir zahtjeva, a u dominantnoj "0" podatkovni okvir. Ovakvim označavanjem okvira postiže se prednost podatkovnog okvira pri arbitraži nad okvirom zahtjeva s istim arbitražnim identifikatorom. Za specificiranje duljine podataka u oktetima koristi se 4-bitno DLC polje od kojih se zapravo koristi 3 bita, s obzirom na to da je duljina podataka ograničena na 8 okteta. Nakon polja s podacima nalaze se CRC kod i ACK bit. Čvor koji prenosi okvir postavlja ACK bit u recesivnu "1" jer očekuje da će bar jedan čvor potvrditi ispravnost poruke postavljanjem stanja sabirnice u dominantnu "0". Naposljetku se prenosi niz od 7 recesivnih "1" kao oznaka kraja okvira (EOF).
 
 \begin{figure}[htb]
 \centering
@@ -179,30 +180,114 @@ Prema \cite{bosch1991} CAN protokol razlikuje 5 vrsta grešaka:
 Svaki vrsta greške od navedenih odgovara jednoj od metoda za detekciju grešaka koje su dio CAN protokola. Svaki CAN primopredajnik tijekom prijenosa poruke osluškuje sabirnicu bit po bit kako bi potvrdio da se njegova poruka ispravno prenosi. Ako se postavljeni bit i stvarni bit na sabirnici razlikuju, osim u periodu arbitraže, CAN primopredajnik će detektirati grešku bita. CAN protokol koristi i \textit{bit stuffing} metodu detekcije grešaka, odnosno umetanje dodatnog bita suprotnog polariteta nakon 5 bitova istog polariteta. Dodatne bitove uklanja primopredajnik čvora primatelja. Greškom umetnutog bita smatra se pojavljivanje 6 bita istog polariteta. Svaki čvor primatelj izračunava CRC kod primljene poruke, a razlika u izračunatom i primljenom CRC kodu smatra se CRC greškom. CAN okviri sadrže nekoliko fiksnih bitova, čija neispravnost naznačava grešku formata. Naposljetku, grešku potvrde detektira čvor pošiljatelj kada niti jedan čvor primatelj nije postavio sabirnicu u dominantnu "0" tijekom perioda ACK bita.
 
 Svaki čvor interno održava dva brojača grešaka, brojač grešaka pri prijenosu (engl. \textit{transmit error counter}, TEC) te brojač grešaka pri primitku (engl. \textit{receive error counter}, REC). U kontekstu grešaka, čvorovi mogu biti u aktivnom, pasivnom i stanju ispada \engl{bus off}. Trenutno stanje čvora ovisi o vrijednostima TEC i REC brojača, a prijelazi su prikazani dijagramom na slici \ref{fig:error_stanja}. Kada čvor u aktivnom stanju detektira grešku postavlja aktivnu zastavicu greške u obliku 6 dominatnih bitova koji će sigurno trenutni okvir učiniti nevažećim zbog metode \textit{bit stuffing} te će ostali čvorovi u aktivnom stanju analogno reagirati postavljanjem svojih zastavica. Ovisno na kojem od 6 bitova prve zastavice ostali čvorovi detektiraju grešku, duljina cjelokupnog okvira greške može biti između 6 i 12 bitova. Čvor u pasivnom stanju u slučaju detektiranja greške postavlja pasivnu zastavicu greške u obliku 6 recesivnih bitova, u svrhu samoprovjere čvora, što može rezultirati u promjeni stanja brojača. 
+\newpage
 \begin{figure}[htb]
 \centering
-\includegraphics[width=250pt]{slike/stanja.png}
+\includegraphics[width=230pt]{slike/stanja.png}
 \caption{Stanja CAN čvora}
 \label{fig:error_stanja}
 \end{figure}
 
-S obzirom na to da je 
-% CAN FD i spomeni TTCAN i CAN XL
+S obzirom na to da je maksimalna brzina prijenosa podataka klasičnog CAN-a 1 Mbit/s s ograničenjem od maksimalno 8 okteta podataka po poruci, tvrtka \textit{Robert Bosch GmbH} uvodi CAN s fleksibilnom brzinom prijenosa podataka (engl. \textit{CAN with Flexible Data-Rate}, CAN-FD) kao proširenje CAN-a. CAN-FD povećava maksimalnu duljinu polja podataka jednog okvira s 8 na 64 okteta. Uz navedeno, omogućava dinamično povećanje brzine prijenosa, uobičajeno do 2Mbit/s, isključivo za vrijeme trajanja prijenosa podataka nekog CAN okvira \cite{bosch2022handbook,nasser2023automotive}.
 
-
-
-
-
-
-\subsection{LIN}
 \subsection{FlexRay}
-\subsection{MOST}
-\subsection{Automotive Ethernet}
-\section{Dijagnostički protokoli}
-\subsection{OBD-II}
-\subsection{UDS}
-\subsection{XCP}
+Zbog potrebe za više determinističkim komunikacijskim protokolom s garantiranom propusnosti za kritične poruke, stvoren je FlexRay \cite{nasser2023automotive}. FlexRay za razliku od CAN-a, koji koristi \textit{Code Division Multiple Access} metodu dodjeljivanja pristupa sabirnici, FlexRay koristi \textit{Time Division Multiple Access} metodu koja dodjeljuje pristup za prijenos određenih poruka po vremenskim odsječcima u dva kanala. Poruke mogu biti periodične, fiksne duljine te se za njih dodjeljuju statički vremenski odsječci ili su neperiodične, varijabilne duljine te se onda prenose u dinamičkom vremenskom odsječku \cite{nasser2023automotive}. Maksimalna duljina polja podataka jedne poruke je 254 okteta, što omogućava brzinu prijenosa podataka do 10Mbit/s u slučaju konfiguracije s jednim redundantnim kanalom. Ukoliko komunikacija nije kritična, redundantni kanal moguće je iskoristiti za udvostručenje brzine prijenosa podataka do 20Mbit/s \cite{nasser2023automotive, bosch2022handbook}. FlexRay mreže mogu biti organizirane u sabirničku topologiju ili topologiju zvijezde.
+\subsection{Ethernet}
+Pojava sustava s potrebama za još većom brzinom prijenosa podataka, potaknula je proizvođače na uporabu Etherneta prilagođenog za primjenu u automobilskoj industriji \engl{automotive Ethernet} u internim mrežama svojih vozila \cite{nasser2023automotive, bosch2022handbook}. Brzine prijenosa podataka kreću se u rasponu od 10Mbit/s do 10Gbit/s, što Ethernet čini priladnim za vremenski osjetljivu komunikaciju, poput spajanja domenskih upravljačkih jedinica te za primjene koje zahtjevaju veliku propusnost, primjerice prijenos video toka između ADAS-a i video senzora. Prednost korištenja Etherneta dolazi i iz kompatibilnosti s postojećim sustavima poput sigurnosnih stijena, usmjerivača te mrežnim stogovima raznih operacijskih sustava.  
 
+Najveća prilagodbe za automobilsku industriju pojavljuju se na fizičkom sloju, koji mora biti prilagođen standardima elektromagnetske kompatibilnosti (engl. \textit{electromagnetic compatibility}, EMC).
+\subsection{LIN}
+\textit{Local Interconnect Network} sabirnica najčešću primjernu ima u povezivanju senzora i aktuatora s pripadajućim ECU-ovima . Primjerice, koristi se u sustavima domene šasije za upravljanje bravom vrata, podizanjem i spuštanjem prozora te namještanjem zrcala retrovizora \cite{bosch2022handbook, nasser2023automotive, dissecto2023networks}. U automobilima LIN komunikacija odvija se između \textit{master} ECU-a, koji zadaje naredbe i \textit{slave} senzora i aktuatora koji ih obrađuju i po potrebi odgovaraju. Komunikaciju pokreće \textit{master} prijenosom zaglavlja koje sadrži sinkronizacijske bitove te identifikator naredbe. \textit{Slave} odgovara prijenosom podataka maksimalne duljine 8 okteta i kontrolne sume. Iako je sporiji od CAN-a s brzinom prijenosa podataka do 20kbit/s te podržava manje fleksibilnu konfiguraciju od maksimalno 16 čvorova, prednost LIN-a je jeftin prijenosni medij u obliku jednožilnog kabela.
+\section{Dijagnostički i kalibracijski protokoli}
+ Dijagnostički i kalibracijski protokoli su protokoli aplikacijskog sloja OSI modela te mogu funkcionirati povrh različitih protokola nižih slojeva, ali su u ovom radu razmatrani u kontekstu CAN-a. U ovom poglavlju opisani su dijagnostički protokoli \textit{Unified Diagnostic Services} (UDS) i \textit{On Board Diagnostics II} (OBD-II) te univerzalni mjerni i kalibracijski protokol (engl. \textit{Universal Measurement and Calibration Protocol}, XCP). 
+ 
+\subsection{Transportni protokol ISO-15765-2}
+Preduvjet za ispravnu komunikaciju putem protokola UDS i OBD-II je povećanje maksimalne duljine prenesenih podataka u jednom CAN okviru. U tu svrhu, kroz standard ISO 15765, uveden je ISO-15765 transportni protokol (ISO-TP) koji omogućava pouzdan prijenos podataka veličine do 4GB povrh CAN-a ili CAN-FD-a \cite{dissecto2023isotp}. ISO-TP uvodi 6 načina adresiranja čvorova, gdje se pri korištenju normalnog načina adresiranja svakom čvoru pridjeljuju dva arbitražna identifikatora, za primanje i slanje poruka.
+
+Podaci veći od maksimalne veličine polja podataka CAN ili CAN-FD okvira, fragmentiraju se u jedan \textit{First Frame} (FF) okvir te u više uzastopnih \textit{Consecutive Frame} (CF) okvira. Nakon FF okvira te prije primitka ostatka podataka kroz više CF okvira, primatelj mora prvo poslati \textit{Flow Control} okvir, kojim definira parametre veličine bloka i vremenskog razmaka. U slučaju da su podaci manji od maksimalne veličine polja podataka CAN ili CAN-FD okvira, prenose se \textit{Single Frame} okvirom.  
+
+\subsection{OBD-II}
+Zahtjev za uvođenjem dijagnostike u svrhu kontrole emisija u svim novim automobilima izdao je \textit{California Air Resources Board} u Kaliforniji 1991. godine. Navedena dijagnostika je nazvana \textit{On Board Diagnostics} (OBD) te je 1994. standardizirana pod nazivom OBD-II. OBD-II definira standardizirani skup dijagnostičkih informacija koje svaki ECU mora čuvati te priključak i komunikacijski protokol za pristup navedenom skupu \cite{bosch2022handbook}.
+
+Od 2014. godine u Europskoj Uniji dozovoljeno je samo korištenje CAN-a na fizičkom sloju i sloju podatkovne poveznice te protokola ISO-TP na transportnom sloju, što je u skladu sa standardom ISO 15767 \cite{bosch2022handbook}. Međutim, priključak OBD-II uz CAN podržava i protokole \textit{Keyword Protocol 2000}, VPW i PWM te protokol standarda ISO 9141-2. Shema priključka OBD-II s označenim CAN kontaktima prikazana je na slici \ref{fig:obd2} \cite{falch2022obd}.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=250pt]{slike/obd2.png}
+\caption{Shema OBD-II priključka}
+\label{fig:obd2}
+\end{figure}
+
+Zahtjevi u protokolu OBD-II šalju se s arbitražnim identifikatorom \texttt{0x7DF}, a odgovori na zahtjeve s identifikatorima \texttt{0x7E8} do \texttt{0x7EF}. Dijagnostičke informacije poput trenutne brzine, broja okretaja te temperature motora, moguće je dohvatiti korištenjem različitih servisa s njihovim paramtarskim identifikatorima (engl. \textit{Parameter identificator}, PID). Specifičan je servis \texttt{03}, koji nudi isčitavanje dijagnostičkih kodova neispravnosti (engl. \textit{diagnostic trouble code}, DTC) te servis \texttt{04} koji omogućava njihovo brisanje \cite{falch2022xcp}.
+
+\subsection{UDS}
+\textit{Unified Diagnostic Services} (UDS) je protokol aplikacijskog sloja koji nudi niz dijagnostičkih servisa koje je moguće implementirati za pojedini ECU. Standardiziran je u ISO 14229 te povrh CAN-a koristi ISO-TP na transportnom sloju \cite{dissecto2023uds}.
+
+ECU se u UDS komunikaciji ponaša kao poslužitelj, dok je klijent najčešće dijagnostički alat servisera ili programska podrška za konfiguraciju ECU-ova u tvornici. Kroz niz UDS servisa moguće je upravljati stanjem ili ponovno pokrenuti ECU, čitati i brisati DTC-ove, isčitavati i modificirati parametre ECU-a, testirati značajke ECU-a korištenjem ugrađenih rutina te isčitavati i modificirati sadržaj memorije, prvenstveno u svrhu ažuriranja \cite{falch2022uds}. UDS zahtjev sastoji se od identifikatora servisa (engl. \textit{service identifier}, SID), okteta podfunkcije odabranog servisa, skupa s potrebnim parametrima, prikazano na slici \ref{fig:uds}. Ukoliko je odgovor pozitivan, sadržavat će SID uvećan za 0x40 te podatke odgovora specifične tom servisu. U slučaju negativnog odogvora, odgovor počinje s oketom \texttt{0x7F} te sadrži SID zahtjevanog servisa te kod negativnog odgovora (engl. \textit{negative response code}, NRC), primjerice kod \texttt{0x11} u slučaju da ECU ne podržava zahtjevani servis. 
+
+\bigskip
+\begin{figure}[htb]
+\centering
+\includegraphics[width=300pt]{slike/uds.png}
+\caption{UDS zahtjev, pozitivan i negativan odgovor}
+\label{fig:uds}
+\end{figure}
+
+Između 27 dostupnih UDS servisa, kao sigurnosno kritične UDS servise treba izdvojiti:
+\begin{itemize}
+    \item \texttt{0x10 DiagnosticSessionControl}
+    \item \texttt{0x11 ECUReset}
+    \item \texttt{0x28 CommunicationControl}
+    \bigskip
+    \item \texttt{0x22 ReadDataByIdentifier}
+    \item \texttt{0x23 ReadMemoryByAddress}
+    \item \texttt{0x2E WriteDataByIdentifier}
+    \item \texttt{0x3D WriteMemoryByAddress}
+    \bigskip
+    \item \texttt{0x34 RequestDownload}
+    \item \texttt{0x35 RequestUpload}
+    \item \texttt{0x38 RequestFileTransfer}
+    \bigskip
+    \item \texttt{0x2F InputOutputControlByIdentifier}
+    \item \texttt{0x31 RoutineControl}
+    \bigskip
+    \item \texttt{0x27 SecurityAccess}
+    \item \texttt{0x29 Authentication}
+\end{itemize}
+
+Servis \texttt{DiagnosticSessionControl} koristi se za izmjenu vrste dijagnostičke sesije. Dijagnostička sesija određuje kontekst izvršavanja servisa, primjerice kojem dijelu memorije se pristupa i koji dio izvršnog koda se može ažurirati. Također, servisi mogu biti podijeljeni po različitim vrstama dijagnostičkih sesija, čime se omogućava ili onemogućava njihovo korištenje. Servis \texttt{ECUReset} koristi se za pokretanje više različitih vrsta resetova ECU-ova. Vrstu reseta određuje oktet podfunkcije. Zabrana primanja i slanja poruka nekom ECU-u može se uvesti korištenjem servisa \texttt{CommunicationControl}.
+
+Servisi \texttt{ReadDataByIdentifier} i \texttt{WriteDataByIdentifier} koriste se u svrhu čitanja i pisanja podataka spremljenima pod određenim podatkovnim identifikatorima (engl. \textit{data identifier}, DID). Značenje većine identifikatora određuje proizvođač. Za čitanje i pisanje u memoriju ECU-a koriste se servisi \texttt{ReadMemoryByAddress} i \texttt{WriteMemoryByAddress}, gdje dostupnost dijelova memorije ovisi o konkretnoj implementaciji\cite{falch2022uds, dissecto2023uds}.
+
+Skupini servisa \texttt{0x34} do \texttt{0x38} koji služe za preuzimanje i prijenos podataka pripadaju servisi \texttt{RequestUpload}, texttt{RequestDownload} te \texttt{RequestFileTransfer}. Servisi \texttt{RequestUpload} i \texttt{RequestDownload} koriste se za započinjanje prijenosa izvršnog koda s testirane jedinice na klijenta te obrnuto. Servis \texttt{RequestFileTransfer} koristi se za preuzimanje ili prijenos datoteka te dohvaćanje informacija o datotečnom sustavu ECU-a.
+
+Servis \texttt{InputOutputControlByIdentifier} omogućava klijentu upravljanje signalima koje ECU odašilje, njihovo zamrzavanje na trenutnoj vrijednosti ili resetiranje na pretpostavljenu vrijednost. Servis \textit{RoutineControl} omogućava klijentu aktivaciju i deaktivaciju pretprogramiranih testnih rutina te dohvaćanje njihovih rezultata.
+
+Naposljetku, za sve UDS servise moguće je omogućiti autorizaciju ili autentifikaciju s više razina pristupa putem servisa \texttt{SecurityAccess} ili \texttt{Authentication}. Servis \texttt{0x27 SecurityAccess} koristi nespecificirani \textit{seed-and-key} algoritam. Pojam \textit{seed-and-key} upotrebljava se u UDS specifikaciji umjesto pojma izazov-odgovor \engl{challenge-response} koji je čest u ostalim granama kibernetičke sigurnosti. Slijed autorizacije servisom \texttt{0x27} može se prikazati kroz nekoliko koraka:
+\begin{enumerate}
+    \item Klijent šalje zahtjev za autorizacijom te dodatne parametre poput zahtjevane razine pristupa.
+    \item ECU generira niz okteta \textit{seed} i šalje ga klijentu.
+    \item Klijent i ECU koriste \textit{seed} kao ulaz u \textit{seed-and-key} algoritam te izračunavaju ključ.
+    \item Klijent šalje \textit{seed} ECU-u.
+    \item ECU uspoređuje primljeni ključ s izračunatim te odobrava ili odbija pristup klijentu.
+\end{enumerate}
+Sigurnost autorizacije putem servisa \texttt{SecurityAccess} ovisi o odabranom \textit{seed-and-key} algoritmu.
+\newpage
+Servis \texttt{Authentication} dodan je u reviziji standarda ISO-14229-1:2020 kao moderna alternativa servisu \texttt{SecurityAccess}. Temelji se na korištenju digitalnih certifikata i infrastrukture javnog ključa (engl. \textit{public key infrastructure, PKI} za autentifikaciju \cite{vector2021uds}:
+\begin{enumerate}
+    \item Klijent šalje zahtjev za autentifikacijom te svoj digitalni certifikat s javnim ključem.
+    \item ECU verificira certifikat provjeravajući njegov potpis s javnim ključem certifikacijskog autortiteta kojem vjeruje.
+    \item ECU generira niz okteta \textit{challenge} i šalje ga klijentu.
+    \item Klijent izračunava digitalni potpis koristeći \textit{challenge} te svoj privatni ključ te ga šalje ECU-u.
+    \item ECU verificira ispravnost potpisa koristeći javni ključ klijenta te odobrava ili odbija pristup klijentu.
+\end{enumerate}
+
+\subsection{XCP}
+Protokol XCP proširenje je CAN kalibracijskog protokola (engl. \textit{CAN Calibration Protocol}, CCP) s podrškom za Ethernet, SPI, USB, FlexRay i CAN-FD kao nižim slojevima umjesto klasičnog CAN-a \cite{falch2022xcp}. Koristi se za mjerenje i kalibraciju parametara i programiranje flash memorije ECU-ova. Najčešće se koristi samo za vrijeme razvoja i testiranja ECU-a \cite{falch2022xcp}.
+
+Komunikacija je oblika \textit{master-slave}, gdje je kalibracijski alat \textit{master}, a ECU \textit{slave}. \textit{Master} s ECU-om komunicira putem zahtjeva nazvanih \textit{Command Receive Object} (CRO) te od ECU-a dobiva \textit{Data Transmission Object} (DTO) odgovore. DTO može biti poruka odgovora na naredbu (engl. \textit{Command Response Message}, CRM), poruka događaja (engl. \textit{Event Message}, EV) te poruka dohvaćanja podataka (engl. \textit{Data Acquisition Message}, DAQ).
+
+U slučajevima kada XCP treba ostati dostupan i nakon prodaje, moguće je kontrolirati pristup korištenjem \textit{seed-and-key} autorizacije. Za autorizaciju se koriste CRO-ovi \texttt{GET\_SEED} i \texttt{UNLOCK}, a koraci autorizacije isti su kao i kod UDS servisa \texttt{Security Access}.
 \chapter{Pregled postojećih napada}
 \section{Napadi specifični komunikacijskim i dijagnostičkim protokolima automobila}
 opcenito opisi za ove koje ne razmatramo u detalje
@@ -210,14 +295,21 @@ opcenito opisi za ove koje ne razmatramo u detalje
 \subsection{UDS}
 \subsection{XCP}
 \section{Napadi na automobile i sustave automobila}
-\chapter{Postojeći edukacijski materijali u području sigurnosti vozila}
+napravi kratku analizu svega, izvuci sve napadnute sustave 
+% https://illmatics.com/car_hacking.pdf
+\chapter{Analiza postojećih edukacijskih materijala u području sigurnosti vozila}
 hw based caputre the flag challenges,
 blockharbour ctf
 htb
 onaj guide od valseka
 ... pogledaj biljeske
+icsim
+
+napravi kratku analizu svega, pokazi prednosti i nedostatke
 \chapter{Implementacija sustava za obuku stručnjaka sigurnosti}
 
+\section{Arhitektura}
+\section{Zadaci}
 spomeni xcp scapy ogranicenja
 spomeni granicu izmedju stvari koje se prate na kontroleru i koje su na aplikacijskoj razini (TEC, busoff...)
 \chapter{Zaključak}
