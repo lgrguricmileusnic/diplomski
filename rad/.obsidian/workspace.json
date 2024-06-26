@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "biljeske/19_04_2024.md",
+                "file": "biljeske/31_05_2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "76f04bb9d7b14528",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "biljeske/31_05_2024.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,8 +61,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "vxcan",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biljeske/19_04_2024.md",
+                "file": "biljeske/31_05_2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biljeske/19_04_2024.md",
+                "file": "biljeske/31_05_2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "biljeske/19_04_2024.md"
+                "file": "biljeske/31_05_2024.md"
               }
             }
           }
@@ -146,53 +159,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c23a11927024253a",
+  "active": "76f04bb9d7b14528",
   "lastOpenFiles": [
-    "biljeske/vanjske_datoteke/UDS_Faltposter_softing2016.pdf",
-    "biljeske/19_04_2024.md",
-    "biljeske/26_04_2024.md",
-    "biljeske/03_05_2024.md",
-    "biljeske/12_04_2024.md",
-    "biljeske/10_05_2024.md",
-    "biljeske/24_05_2024.md",
-    "biljeske/31_05_2024.md",
+    "latex/slike/arhitektura2.drawio",
+    "latex/slike/arhitektura2.png",
+    "latex/slike/dockercan_stack.drawio",
+    "latex/slike/dockercan_stack.png",
+    "latex/slike/bridge.drawio",
+    "latex/slike/bridge.png",
+    "latex/slike/bridge(1).drawio",
+    "latex/slike/bridge(1).png",
+    "latex/slike/vcan_bridge.drawio",
+    "latex/slike/vcan_bridge.png",
+    "latex/slike/diplomski.pdf",
+    "latex/slike/centralizirano_dc.drawio",
+    "latex/slike/centralizirano_dc.png",
+    "latex/slike/necentralizirano_dc.drawio",
+    "latex/slike/necentralizirano_dc.png",
+    "latex/backup/slike/vcan_bridge.png",
+    "latex/backup/slike/uds.png",
     "latex/backup/slike/stanja.png",
-    "latex/backup/slike/sabirnica.png",
-    "latex/backup/slike/arhitektura.png",
-    "latex/backup/slike/CAN_okvir.png",
     "latex/backup/slike",
     "latex/backup/literatura.bib",
     "latex/backup/fer.cls",
-    "latex/backup/fer.bst",
-    "latex/backup/diplomski.tex",
-    "latex/backup",
-    "latex/backup2/slike/stanja.png",
-    "latex/backup2/slike/sabirnica.png",
-    "latex/backup2/slike/arhitektura.png",
-    "latex/backup2/slike/CAN_okvir.png",
-    "latex/backup2/literatura.bib",
-    "latex/backup2/slike",
-    "latex/backup2/fer.cls",
-    "latex/backup2/fer.bst",
-    "latex/slike/arhitektura.png",
-    "latex/slike/arhitektura2.png",
     "biljeske/07_06_2024.md",
-    "biljeske/19_01_2024.md",
-    "biljeske/05_04_2024.md",
-    "biljeske/12_01_2024.md",
-    "biljeske/08_12_2023.md",
-    "biljeske/17_11_2023.md",
-    "biljeske/10_11_2023.md",
-    "biljeske/03_11_2023.md",
-    "biljeske/08_03_2024.md",
-    "biljeske/27_10_2023.md",
-    "biljeske/20_10_2023.md",
-    "kod/zadaci/CAN_IC_zadatak/kod/gateway-ecu/venv/lib/python3.11/site-packages/black-24.4.0.dist-info/licenses/AUTHORS.md",
-    "kod/ecu-template/venv/lib/python3.11/site-packages/idna-3.7.dist-info/LICENSE.md",
+    "biljeske/21_06_2024.md",
+    "biljeske/31_05_2024.md",
+    "biljeske/24_05_2024.md",
+    "biljeske/03_05_2024.md",
+    "biljeske/26_04_2024.md",
+    "biljeske/10_05_2024.md",
     "biljeske/17_05_2024.md",
-    "kod/agl-ic-compose/gui/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
-    "kod/agl-ic-compose/gui/README.md",
-    "kod/agl-ic-compose/gui/LICENSE.md",
-    "kod/agl-ic-compose/ic/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md"
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/rjesenje/rjesenje.md",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/postavljanje.md",
+    "kod/zadaci/UDS_RMBA_jednostavni_zadatak/zadatak.md",
+    "biljeske/12_01_2024.md",
+    "biljeske/19_01_2024.md",
+    "biljeske/29_03_2024.md",
+    "kod/dockercan/README.md",
+    "biljeske/15_03_2024.md",
+    "biljeske/05_04_2024.md",
+    "biljeske/22_03_2024.md",
+    "biljeske/08_12_2023.md",
+    "biljeske/08_03_2024.md",
+    "biljeske/03_11_2023.md",
+    "biljeske/12_04_2024.md",
+    "biljeske/19_04_2024.md",
+    "biljeske/27_10_2023.md",
+    "biljeske/20_10_2023.md"
   ]
 }
